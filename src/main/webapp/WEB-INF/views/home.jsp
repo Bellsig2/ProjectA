@@ -12,9 +12,6 @@
 <h1>안녕하세요</h1>
 <P>  The time on the server is ${serverTime}. </P>
 
-<form action="./login" method="post">
-	<input type="text" name = "num">
-	<button type="submit">전송</button>
-</form>
+ <a href="./member/login"><button>로그인</button></a>
 </body>
 </html>
