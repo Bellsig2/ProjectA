@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <html>
 <head>
 	<title>Home</title>
@@ -10,5 +11,10 @@
 </h1>
 <h1>안녕하세요</h1>
 <P>  The time on the server is ${serverTime}. </P>
+
+<form action="./login" method="post">
+	<input type="text" name = "num">
+	<button type="submit">전송</button>
+</form>
 </body>
 </html>
