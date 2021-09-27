@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+	background-color:Gainsboro;
+}
+.box1 {
+	width:100%;
+	height:1000px;
+	background-color:white;
+}
+
+.pre {
+	width:50%;
+	height:67px;
+	line-height:67px;
+	margin : auto 0px;
+	background-color:pink;
+	float:left;
+	text-align:center;
+}
+
+.click1{
+	width:70px;
+	height:0px;
+	border:2px solid blue;
+	margin : 0 auto;
+	background-color:blue;
+} 
+
+.live {
+	width:50%;
+	height:67px;
+	line-height:67px;
+	margin : auto 0px;
+	float:left;
+	text-align:center;
+}
+
+.box1_1 {
+	width:100%;
+	height:100px;
+	background-color:yellow;
+}
+
+.intro {
+	list-style:none;
+	text-align:center;
+}
+
+.title2{
+	font-size:30px;
+}
+

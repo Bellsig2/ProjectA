@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+	background-color:Gainsboro;
+}
+.box1 {
+	width:100%;
+	height:1000px;
+	background-color:white;
+}
+
+.pre {
+	width:50%;
+	height:67px;
+	line-height:67px;
+	margin : auto 0px;
+	float:left;
+	text-align:center;
+}
+
+.live {
+	width:50%;
+	height:67px;
+	line-height:67px;
+	margin : auto 0px;
+	background-color:pink;
+	float:left;
+	text-align:center;
+}
