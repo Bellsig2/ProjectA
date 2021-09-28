@@ -1,0 +1,48 @@
+@charset "UTF-8";
+* {
+	margin : 0;
+	padding : 0;
+	box-sizing: boder-box;
+}
+html {
+	font-size:16px;
+	line-height: 20px;
+}
+
+.header{
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.header_con {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:760px;
+	height:57px;
+	margin:0 auto;
+}
+
+.header_con img{
+	width:63px;
+	height:36px;
+}
+
+#member_list {
+	display:flex;
+	align-content: center;
+	align-items:center;
+	list-style: none;
+	line-height:57px;
+	padding:0px;
+	height:100%;
+}
+
+#member_list :first-child{
+	margin:0;
+}
+
+#member_list li{
+	font-size: 14px;
+	margin-left: 25px;
+	height:100%;
+}
