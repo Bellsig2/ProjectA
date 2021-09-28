@@ -38,13 +38,17 @@ body {
 
 .box1_1 {
 	width:100%;
-	height:100px;
+	height:200px;
 	background-color:yellow;
+	clear:both;
+ 
 }
 
 .intro {
 	list-style:none;
 	text-align:center;
+	position: relative;
+    top: 55px;
 }
 
 .title2{

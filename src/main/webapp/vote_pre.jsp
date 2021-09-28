@@ -10,11 +10,13 @@
 	
 	<body>
 		<div class=box1>
-			<div class="pre">
+			<button class="pre" onclick="location.href='./vote_pre.jsp'">
 			사전 온라인 투표
 				<div class="click1"></div>
-			</div>
-			<div class="live">실시간 1위 투표</div>
+			</button>
+			<button class="live" onclick="location.href='./vote_live.jsp'">
+			실시간 1위 투표
+			</button>
 			
 			<div class=box1_1>
 			<ul class="intro">
@@ -25,6 +27,6 @@
 			</div>
 		</div>
 		
-	<script type="text/javascript" src="./resources/js/vote_live.js"></script>
+	<script type="text/javascript" src="./resources/js/vote_pre.js"></script>
 	</body>
 </html>

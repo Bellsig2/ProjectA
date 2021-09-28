@@ -2,11 +2,11 @@
  * 
  */
  
- const preText = document.querySelector("pre");
+/* const preText = document.querySelector("pre");
  
  function onClick() {
-	location.href="../vote_pre.jsp"
+	window.location.href="http://localhost:8080/pa/vote_pre.jsp"
 }
  
- preText.addEventListener("click", onClick);
+ preText.addEventListener("click", onClick);*/
  
