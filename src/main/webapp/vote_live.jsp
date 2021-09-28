@@ -12,10 +12,10 @@
 		<div class=box1>
 			<button class="pre" onclick="location.href='./vote_pre.jsp'">
 			사전 온라인 투표
-				<div class="click1"></div>
 			</button>
 			<button class="live" onclick="location.href='./vote_live.jsp'">
 			실시간 1위 투표
+				<div class="click"></div>
 			</button>
 			
 			<div class=box1_1>

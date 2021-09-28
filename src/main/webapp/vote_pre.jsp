@@ -12,7 +12,7 @@
 		<div class=box1>
 			<button class="pre" onclick="location.href='./vote_pre.jsp'">
 			사전 온라인 투표
-				<div class="click1"></div>
+				<div class="click"></div>
 			</button>
 			<button class="live" onclick="location.href='./vote_live.jsp'">
 			실시간 1위 투표
@@ -25,6 +25,15 @@
 				<li class="title3">투표기간 2021.09.24 14:00 ~ 2021.09.27 09:00 (KST)</li>
 			</ul>
 			</div>
+			
+			<section class="vote">
+				<ul class="list">
+					<li>
+						<div class="cover">
+							<a href="https://www.genie.co.kr/detail/albumInfo?axnm=82244790"></a>
+						</div>
+				</ul>
+			</section>
 		</div>
 		
 	<script type="text/javascript" src="./resources/js/vote_pre.js"></script>

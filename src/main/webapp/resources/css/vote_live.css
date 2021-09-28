@@ -16,7 +16,17 @@ body {
 	margin : auto 0px;
 	float:left;
 	text-align:center;
+	border:0;
+	outline:0;
 }
+
+.click{
+	width:70px;
+	height:0px;
+	border:2px solid blue;
+	margin : 0 auto;
+	background-color:blue;
+} 
 
 .live {
 	width:50%;
@@ -26,6 +36,8 @@ body {
 	background-color:pink;
 	float:left;
 	text-align:center;
+	border:0;
+	outline:0;
 }
 
 .box1_1 {
