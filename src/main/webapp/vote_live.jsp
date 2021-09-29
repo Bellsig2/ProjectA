@@ -10,13 +10,17 @@
 
 	<body>
 		<div class=box1>
-			<button class="pre" onclick="location.href='./vote_pre.jsp'">
-			사전 온라인 투표
-			</button>
-			<button class="live" onclick="location.href='./vote_live.jsp'">
-			실시간 1위 투표
-				<div class="click"></div>
-			</button>
+		<ul id="menu">
+		<li><button class="pre" onclick="location.href='./vote_pre.jsp'">
+		사전 온라인투표
+		</button>
+		</li>
+		<li><button class="live" onclick="location.href='./vote_live.jsp'">
+		실시간 1위 투표
+			<div class="click"></div>
+		</button>
+		</li>
+		</ul>
 			
 			<div class=box1_1>
 			<ul class="intro">
@@ -25,7 +29,7 @@
 				<li class="title3">투표기간 MCOUNTDOWN 생방송 중 실시</li>
 			</ul>
 			</div>
-			
+	</div>	
 	<script type="text/javascript" src="./resources/js/vote_live.js"></script>		
 	</body>
 </html>

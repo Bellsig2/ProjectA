@@ -9,7 +9,7 @@
 	</head>
 	
 	<body>
-		<div>
+		<div class="body">
 			<div class="mainbody">
 				<img src="./resources/images/mainbody_2.jpg">
 			</div>
@@ -18,5 +18,7 @@
 				<img src="./resources/images/MCmain.jpg">
 			</div>
 		</div>
+		
+		<script type="text/javascript" src="./resources/js/broadcast.js"></script>
 	</body>
 </html>

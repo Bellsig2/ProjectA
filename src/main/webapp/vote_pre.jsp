@@ -10,13 +10,17 @@
 	
 	<body>
 		<div class=box1>
-			<button class="pre" onclick="location.href='./vote_pre.jsp'">
-			사전 온라인 투표
-				<div class="click"></div>
-			</button>
-			<button class="live" onclick="location.href='./vote_live.jsp'">
-			실시간 1위 투표
-			</button>
+		<ul id="menu">
+		<li><button class="pre" onclick="location.href='./vote_pre.jsp'">
+		사전 온라인투표
+			<div class="click"></div>
+		</button>
+		</li>
+		<li><button class="live" onclick="location.href='./vote_live.jsp'">
+		실시간 1위 투표
+		</button>
+		</li>
+		</ul>
 			
 			<div class=box1_1>
 			<ul class="intro">
@@ -26,14 +30,7 @@
 			</ul>
 			</div>
 			
-			<section class="vote">
-				<ul class="list">
-					<li>
-						<div class="cover">
-							<a href="https://www.genie.co.kr/detail/albumInfo?axnm=82244790"></a>
-						</div>
-				</ul>
-			</section>
+
 		</div>
 		
 	<script type="text/javascript" src="./resources/js/vote_pre.js"></script>

@@ -9,15 +9,29 @@ body {
 	background-color:white;
 }
 
-.pre {
-	width:50%;
-	height:67px;
-	line-height:67px;
-	margin : auto 0px;
-	float:left;
+#menu{
+	list-style:none;
+	margin:0;
+	padding:0;
 	text-align:center;
+}
+
+#menu li{
+	display:inline;
+}
+
+#menu button{
+	display:inline-block;
+	padding:10px;
+	width:300px;
+	height:80px;
 	border:0;
 	outline:0;
+	font-size:20px;
+}
+
+.live {
+	background-color:pink;
 }
 
 .click{
@@ -27,18 +41,6 @@ body {
 	margin : 0 auto;
 	background-color:blue;
 } 
-
-.live {
-	width:50%;
-	height:67px;
-	line-height:67px;
-	margin : auto 0px;
-	background-color:pink;
-	float:left;
-	text-align:center;
-	border:0;
-	outline:0;
-}
 
 .box1_1 {
 	width:100%;
