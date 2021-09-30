@@ -30,7 +30,9 @@
 			</ul>
 			</div>
 			
+			<section class="vote_area">
 			<ul class="vote_list">
+
 				<li>
 					<div class="thum">
 						
@@ -174,6 +176,8 @@
 		<a href="javascript:;" class="go_vote end">투표마감</a>
 	
 </li>
+
+
 
 <li>
 	<div class="thum">
@@ -526,9 +530,25 @@
 </li>
 
 </ul>
+		</section>
+		
+		<!-- 투표 유의사항 -->
+		<section class="info">
+			<div class="contents">
+				<h4>투표 유의사항</h4>
+				<ul class="chart_info">
+					<li>득표율은 소수점 첫째자리를 반올림한 수치로 모든 후보의 득표율 총 합계가 100%를 초과하거나 미달할 수 있음</li>
+					<li><span class="pick">my pick</span>이번 주 내가 투표한 곡</li>
+					<li>본인인증 된 아이디에 한하여 투표기간 내 유료회원은 3회, 무료회원은 1회 참여 가능</li>
+					<li>다중 아이디 보유 시 한 개의 아이디로만 투표 가능</li>
+					<li>국내 접속 유저만 투표 가능</li>
+				</ul>
+			</div>
+		</section>
 			
 
 		</div>
+
 		
 	<script type="text/javascript" src="./resources/js/vote_pre.js"></script>
 	</body>
