@@ -33,7 +33,7 @@
 				본편영상
 				</button>
 				
-				<button class="clip" onclick="locaion.href='./vod_clip.jsp">
+				<button class="clip" on9click="locaion.href='./vod_clip.jsp">
 				클립영상
 				</button>
 			</ul>

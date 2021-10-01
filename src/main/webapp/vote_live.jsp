@@ -9,17 +9,18 @@
 	</head>
 
 	<body>
-		<div class=box1>
 		<ul id="menu">
-		<li><button class="pre" onclick="location.href='./vote_pre.jsp'">
-		사전 온라인투표
-		</button>
+		<li>
+			<button class="pre" onclick="location.href='./vote_pre.jsp'">
+			사전 온라인투표
+			</button>
 		</li>
-		<li><button class="live" onclick="location.href='./vote_live.jsp'">
-		실시간 1위 투표
+		<li>
+			<button class="live" onclick="location.href='./vote_live.jsp'">
+			실시간 1위 투표
+			</button>
+		</li>
 			<div class="click"></div>
-		</button>
-		</li>
 		</ul>
 			
 			<div class=box1_1>
@@ -69,8 +70,42 @@
 					</li>
 				</ul>
 			</section>
+			
+			<!-- 투표 유의사항 -->
+			<section class="info realtime">
+			<!-- 실시간 투표 클래스 realtime -->
+				<div class="contents">
+					<h4>투표 유의사항</h4>
+					<ul class="chart_info">
+						<li>투표기간 중 본인인증된 아이디에 한하여 1인 1회 참여 가능 (한 개의 아이디로만 참여 가능)</li>
+						<li>PC, 모바일 등 디바이스와 무관하게 투표기간 중 총 1회 투표 가능</li>
+						<li>SMS 투표와 온라인 투표 동시 참여 시, 투표는 최초 1회만 인정</li>
+						<li>국내 접속 유저만 투표 가능</li>
+					</ul>
+				</div>
+			</section>
+			
+					<!-- 댓글 -->
+			<section class="reply">
+				<div class="contents">
+					<h4>아티스트 <span>응원 메세지</span></h4>
+					<div class="comment-title tit-box">
+						<h3><img src="//image.genie.co.kr/imageg/web/title/h3_comment.gif" alt="댓글"></h3>
+						<span class="article">(총 <strong id="replyTotalCnt">0</strong>개)</span>
+						<p class="note"><a class="def-btn radius" href="javascript:;" onclick="FG_layerPopup_etc.option.parentMove=false; FG_layerPopup_etc.show($('#reply_notice'), ''); return false;"><em>*</em> 댓글 운영 정책</a></p>
+					</div>
+					<div class="input-comment" id="reply_wrap">
+						<input type="hidden" name="h_page" id="h_page">
+						<fieldset class="comment">
+							<legend>리뷰 쓰기</legend>
+							<textarea class="textarea" maxlength="140" title="리뷰 내용 입력" placeholder="리뷰는 최대 140자까지 쓸 수 있습니다."></textarea>
+							<button type="button" class="btn-submit" id="commentSubmit">등록</button>
+						</fieldset>
+					</div>
+					<article class="list-comment"></article>
+				</div>
+			</section>
 	
-	</div>	
 	<script type="text/javascript" src="./resources/js/vote_live.js"></script>		
 	</body>
 </html>

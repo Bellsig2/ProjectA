@@ -9,17 +9,18 @@
 	</head>
 	
 	<body>
-		<div class=box1>
 		<ul id="menu">
-		<li><button class="pre" onclick="location.href='./vote_pre.jsp'">
-		사전 온라인투표
+		<li>
+			<button class="pre" onclick="location.href='./vote_pre.jsp'">
+			사전 온라인투표
+			</button>
+		</li>
+		<li>
+			<button class="live" onclick="location.href='./vote_live.jsp'">
+			실시간 1위 투표
+			</button>
+		</li>
 			<div class="click"></div>
-		</button>
-		</li>
-		<li><button class="live" onclick="location.href='./vote_live.jsp'">
-		실시간 1위 투표
-		</button>
-		</li>
 		</ul>
 			
 			<div class=box1_1>
@@ -254,7 +255,7 @@
 	
 </li>
 
-<li>
+<li class="excep">
 	<div class="thum">
 		
 		<a href="javascript:;" onclick="fnPlayerCall('93906695', '', '1');return false;" class="play">재생</a>
@@ -529,6 +530,7 @@
 	
 </li>
 
+
 </ul>
 		</section>
 		
@@ -545,11 +547,30 @@
 				</ul>
 			</div>
 		</section>
+		
+		<!-- 댓글 -->
+		<section class="reply">
+			<div class="contents">
+				<h4>아티스트 <span>응원 메세지</span></h4>
+				<div class="comment-title tit-box">
+					<h3><img src="//image.genie.co.kr/imageg/web/title/h3_comment.gif" alt="댓글"></h3>
+					<span class="article">(총 <strong id="replyTotalCnt">0</strong>개)</span>
+					<p class="note"><a class="def-btn radius" href="javascript:;" onclick="FG_layerPopup_etc.option.parentMove=false; FG_layerPopup_etc.show($('#reply_notice'), ''); return false;"><em>*</em> 댓글 운영 정책</a></p>
+				</div>
+				<div class="input-comment" id="reply_wrap">
+					<input type="hidden" name="h_page" id="h_page">
+					<fieldset class="comment">
+						<legend>리뷰 쓰기</legend>
+						<textarea class="textarea" maxlength="140" title="리뷰 내용 입력" placeholder="리뷰는 최대 140자까지 쓸 수 있습니다."></textarea>
+						<button type="button" class="btn-submit" id="commentSubmit">등록</button>
+					</fieldset>
+				</div>
+				<article class="list-comment"></article>
+			</div>
+		</section>
 			
 
-		</div>
 
-		
 	<script type="text/javascript" src="./resources/js/vote_pre.js"></script>
 	</body>
 </html>
