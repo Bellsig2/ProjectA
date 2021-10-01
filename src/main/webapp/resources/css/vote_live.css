@@ -74,6 +74,7 @@ body { width: 100%; min-width: 1160px; overflow: visible; }
 	border:2px solid blue;
 	margin : 0 auto;
 	transform: translateX(130%);
+	background-color:blue;
 } 
 
 .box1_1 {

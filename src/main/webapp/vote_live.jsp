@@ -9,6 +9,7 @@
 	</head>
 
 	<body>
+	<%@ include file = "./header.jsp" %>
 		<ul id="menu">
 		<li>
 			<button class="pre" onclick="location.href='./vote_pre.jsp'">
