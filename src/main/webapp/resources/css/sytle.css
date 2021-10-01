@@ -329,3 +329,59 @@ body {
 .main_bnr{width:100%; text-align: center}
 .main_bnr img{width:70%; height:50%;} /* 이미지 크기 조절*/
 
+.lineup .main_bnr{padding:10px 0}
+.lineup .artist_lineup {
+	padding: 1.154em 0.846em;
+	font-size: 1.083em;
+	line-height: 1.5em;
+}
+
+.lineup .artist_lineup {
+	width:70%;
+	background: #fff;
+	border: 5px solid black;
+	border-top: none;
+	border-bottom: 5px solid black;
+	padding:30px ;
+	line-height: 20px;
+	font-size: 20px;
+}
+.p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.tit_area {
+	position: relative;
+	width:90%;
+	padding: 60px 300 18px;
+}
+
+.tit_area .more {
+	position: absolute;
+	right: 0;
+	top: 65px;
+	font-size: 14px;
+	padding-right: 14px;
+}
+
+.tit_area .more:after {
+	content: "";
+	background-position: 0 0;
+	width: 10px;
+	height: 14px;
+	position: absolute;
+	right: 0;
+	top: 6px;
+}
+
+.tit_area .date {
+	color: #525252;
+	font-family: "Spoqa Han Sans";
+	font-size: 18px;
+	padding-left: 15px;
+	vertical-align: middle;
+}

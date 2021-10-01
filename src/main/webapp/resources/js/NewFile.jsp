@@ -37,8 +37,8 @@
 				<ul class="menu">
 					<li><a href="javascript:;"
 						onclick="fn_menu_move('/chart/info')">엠카차트</a></li>
-					<li><a href="javascript:;" onclick="fn_menu_move('/vote/pre')">투표</a></li>
-					<li><a href="javascript:;"
+					<li><a href="NewFile1.jsp" onclick="fn_menu_move('/vote/pre')">투표</a></li>
+					<li><a href="NewFile1.jsp;"
 						onclick="fn_menu_move('/broadcast/info')">방송정보</a></li>
 					<li style="display: inline-block;"><a href="javascript:;"
 						onclick="fn_menu_move('/replay/vod')">영상</a></li>
@@ -53,7 +53,23 @@
 				alt="M COUNTDOWN WORLD NO.1 KPOP CHART SHOW 매주 목요일 6시 생방송!"
 				style="visibility: visible;">
 		</section>
-		
+		<section class="lineup">
+		<div class="contents">
+			<div class="tit_area">
+				<h2>라인업</h2>
+				<span class="date">2021.09.30</span>
+				<a href="javascript:;" class="more" onclick="fn_menu_move('/notice')">more</a>
+			</div>
+			<p class="artist_lineup">
+				노라조, NIK, 도한세, 스카이리, 싸이퍼(Ciiphter), 양요섭, AB6IX, NCT 127, E'LAST(엘라스트), OMEGA X, ITZY, 키(KEY), 퍼플키스(PURPLE KISS), 핫이슈(HOT ISSUE)
+				
+			</p>
+		</div>
+
+
+
+
+	</section>
 
 	</div>
 </body>
