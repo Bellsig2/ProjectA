@@ -38,7 +38,7 @@
 						<li><a href="javascript:;"
 							onclick="fn_menu_move('/chart/info')">엠카차트</a></li>
 						<li><a href="./vote_pre.jsp" onclick="fn_menu_move('/vote/pre')">투표</a></li>
-						<li><a href="NewFile1.jsp;"
+						<li><a href="./broadcast.jsp"
 							onclick="fn_menu_move('/broadcast/info')">방송정보</a></li>
 						<li style="display: inline-block;"><a href="javascript:;"
 							onclick="fn_menu_move('/replay/vod')">영상</a></li>

@@ -9,6 +9,7 @@
 	</head>
 	
 	<body>
+	<%@ include file = "./header.jsp" %>
 		<div class="body">
 			<div class="mainbody">
 				<img src="./resources/images/mainbody_2.jpg">
