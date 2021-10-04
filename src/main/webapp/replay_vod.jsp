@@ -11,31 +11,32 @@
 	<body>
 			<ul id="menu">
 				<li>
-				<button class="vod" onclick="location.href='./replay_vod.jsp'">
-				영상 다시보기
-					<div class="click"></div>
-				</button>
+					<button class="vod" onclick="location.href='./replay_vod.jsp'">
+					영상 다시보기
+					</button>
 				</li>
 				
 				<li>
-				<button class="photo" onclick="location.href='./replay_photo.jsp'">
-				포토 다시보기
-				</button>
+					<button class="photo" onclick="location.href='./replay_photo.jsp'">
+					포토 다시보기
+					</button>
 				</li>
+					<div class="click"></div>
 			</ul>
 		
-		<section class = "replay">
-			<ul id="tab">
-				<li class="on">
-				<button class="origin" on click="location.href='./vod_origin.jsp">
-				본편영상
-				</button>
+			<section class = "replay">
+				<ul id="tab">
+					<li class="on">
+					<button class="origin" on click="location.href='./vod_origin.jsp">
+					본편영상
+					</button>
 				
-				<button class="clip" on click="locaion.href='./vod_clip.jsp">
-				클립영상
-				</button>
-				</li>
-			</ul>
+					<button class="clip" on click="locaion.href='./vod_clip.jsp">
+					클립영상
+					</button>
+					</li>
+				</ul>
+				
 		<div class="contents">
 			<ul class="vod_list type2">
 			<li>	<a href="javascript:;" onclick="fnPlayMvID(215582); return false;">		<div class="thum">			<img src="//image.genie.co.kr/Y/IMAGE/IMG_MUSICVIDEO/000/215/582/215582_3_320x240.JPG">			<em>1:21:44</em>		</div>		<div class="tit">			<strong>M COUNTDOWN 726화</strong>			<span class="date">2021.09.23</span>		</div>	</a></li>

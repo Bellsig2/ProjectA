@@ -1,4 +1,28 @@
 @charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, input, select, textarea, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { padding: 0; margin: 0; vertical-align: middle; box-sizing: border-box; font-weight:normal}
+
+header, footer, section, article, menu, nav, aside { display: block; }
+html {font-size: 18px; letter-spacing: -.035em; -webkit-overflow-scrolling: touch; overflow-y: scroll;}
+html, body { width: 100%; -webkit-text-size-adjust: none; font-family: "Spoqa Han Sans"; color:#2e3037}
+body { overflow-x: visible; overflow-y: visible; position: relative; min-width: 320px; -webkit-text-size-adjust: none; justify-content: center; align-items: flex-start; word-break: keep-all; min-height:100%; background:#fbfbfb}
+ul, ol { list-style-type: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+img, fieldset { border: 0; outline: none; }
+label { cursor: pointer; }
+a { text-decoration: none; outline: none !important; color: #2e3037;}
+i, em, address, span { font-style: normal; vertical-align:top}
+button { padding: 0; border: none; background: none; font-size: inherit; line-height: 1.567em; letter-spacing: -.035em; cursor: pointer; outline:none}
+caption, legend { visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0; }
+iframe, object, video, embed { position: relative; top: 0; left: 0; max-width: 100%; }
+.blind, .hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
+input:focus, select:focus {border-color: #f2880a !important;}
+select::-ms-expand { display: none; }
+input::-ms-clear { display: none; }
+body { width: 100%; min-width: 1160px; overflow-x: visible; overflow-y: visible; }
+.content {position: relative; margin: 0 auto; box-sizing: border-box; letter-spacing: -.025em; }
+.content .desc { line-height: 33px; font-size: 24px; }
+.hide {display:block;overflow:hidden;height:0;margin:0;padding:0;line-height:0;text-indent:-99999px}
+
 
 #menu{
 	list-style:none;
@@ -14,15 +38,15 @@
 #menu button{
 	display:inline-block;
 	padding:10px;
-	width:300px;
-	height:80px;
+	width:180px;
+	height:60px;
 	border:0;
 	outline:0;
 	font-size:20px;
 }
 
 .vod {
-	background-color:pink;
+	color:blue;
 }
 
 .click{
@@ -31,10 +55,5 @@
 	border:2px solid blue;
 	margin : 0 auto;
 	background-color:blue;
+	transform: translateX(-130%);
 } 
-
-#menu2 {
-	width:1030px;
-	height:65px;
-	background-color:yellow;
-}
