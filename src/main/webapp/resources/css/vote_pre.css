@@ -31,7 +31,7 @@ body { width: 100%; min-width: 1160px; overflow-x: visible; overflow-y: visible;
 @media screen and (max-width: 1071px) {
 }
 
-.wrap{margin:0 auto; min-width:1080px; padding-bottom:60px}
+.wrap{margin:0 auto; min-width:1080px;}
 .contents{width:1030px; margin:0 auto; position:relative}
 .btn a{background: url(//image.genie.co.kr/imageg/web/promo_2019/festival/btn.png) no-repeat;}
 @media screen and (max-width: 1071px) {
