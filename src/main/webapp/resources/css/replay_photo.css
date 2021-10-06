@@ -72,7 +72,7 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
 .btn-service a, .btn-service-sub a{position:absolute;display:block;width:55px;height:56px;font-size:0;line-height:0;text-indent:-9999px;background-position: 0 -55px; }
 .btn-service.on, .btn-service-sub.on{display:block;opacity:0;visibility:hidden;transition:opacity 0.3s ease 0s,visibility 0.3s ease 0s;}
 
-.wrap{margin:0 auto; min-width:1080px; padding-bottom:60px}
+.wrap{margin:0 auto; min-width:1080px;}
 .contents{width:1030px; margin:0 auto; position:relative}
 .btn a{background: url(//image.genie.co.kr/imageg/web/promo_2019/festival/btn.png) no-repeat;}
 @media screen and (max-width: 1071px) {

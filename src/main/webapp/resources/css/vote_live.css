@@ -20,7 +20,7 @@ iframe, object, video, embed { position: relative; top: 0; left: 0; max-width: 1
 input:focus, select:focus {border-color: #f2880a !important;}
 select::-ms-expand { display: none; }
 input::-ms-clear { display: none; }
-body { width: 100%; min-width: 1160px; overflow: visible; }
+body { width: 100%; min-width: 1160px; overflow: visible;}
 .content {position: relative; margin: 0 auto; box-sizing: border-box; letter-spacing: -.025em; }
 .content .desc { line-height: 33px; font-size: 24px; }
 .hide {display:block;overflow:hidden;height:0;margin:0;padding:0;line-height:0;text-indent:-99999px}
@@ -32,7 +32,7 @@ body { width: 100%; min-width: 1160px; overflow: visible; }
 @media screen and (max-width: 1071px) {
 }
 
-.wrap{margin:0 auto; min-width:1080px; padding-bottom:60px}
+.wrap{margin:0 auto; min-width:1080px;}
 .contents{width:1030px; margin:0 auto; position:relative}
 .btn a{background: url(//image.genie.co.kr/imageg/web/promo_2019/festival/btn.png) no-repeat;}
 @media screen and (max-width: 1071px) {

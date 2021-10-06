@@ -20,6 +20,8 @@
 			</div>
 		</div>
 		
+		<%@ include file = "./footer.jsp" %>
+		
 		<script type="text/javascript" src="./resources/js/broadcast.js"></script>
 	</body>
 </html>

@@ -9,6 +9,7 @@
 	</head>
 	
 	<body>
+	<%@ include file = "./header.jsp" %>
 		<ul id="menu">
 			<li>
 				<button class="vod" onclick="location.href='./replay_vod.jsp'">
@@ -44,6 +45,8 @@
 				</ul>
 			</div>
 		</section>
+		
+		<%@ include file = "./footer.jsp" %>
 					
 	</body>
 </html>
