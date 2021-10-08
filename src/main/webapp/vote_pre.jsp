@@ -572,6 +572,5 @@
 			
 	<%@ include file = "./footer.jsp" %>
 
-	<script type="text/javascript" src="./resources/js/vote_pre.js"></script>
 	</body>
 </html>

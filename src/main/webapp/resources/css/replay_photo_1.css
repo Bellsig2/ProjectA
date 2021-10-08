@@ -261,3 +261,40 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
 .photo {
 	color:blue;
 }
+
+/* 포토상세 */
+.popup.photo_pop{width:557px; height:725px}
+.popup.photo_pop .container{padding:30px 40px; position:relative;}
+.popup.photo_pop .container .slider_pop li{width:100%; height:477px;text-align:center}
+.popup.photo_pop .container .slider_pop div{vertical-align: middle; display:table-cell;width:477px;height:477px;}
+.popup.photo_pop .container .slider_pop img{max-width:477px; max-height:477px;}
+.popup.photo_pop .container .bx-controls-direction a{z-index:100;position:absolute; top:533px; width:24px; height:24px; text-indent:-9999em; }
+.popup.photo_pop .container .bx-prev{left:220px; background-position:-120px 0; }
+.popup.photo_pop .container .bx-prev:hover{background-position: -120px -29px}
+.popup.photo_pop .container .bx-next{right:220px; background-position:-165px 0;}
+.popup.photo_pop .container .bx-next:hover{background-position:-165px -29px}
+.bx-viewport{overflow:visible !important;}
+#slide-counter{text-align: center; margin:25px 0; font-size:16px; color: #ababab; letter-spacing:1px}
+.current-index{color:#000; vertical-align:top}
+.slider_pop li{height:340px;}
+.popup.photo_pop .container span{position:absolute; left:0; bottom:-20px; width:100%; padding:0 30px; display:block; color:#7d7d7d; font-size:22px; text-align:left; line-height:30px}
+
+@media screen and (max-width: 1070px){
+  .popup.photo_pop{width:100%; height:auto;}
+  .popup.photo_pop .popup-header .layer-close{position:fixed; left:0.8em; top:1.1em; z-index:100}
+  #modal{opacity:1 !important}
+  .popup.photo_pop .popup-header{background:none; text-indent:-9999em; height:0;}
+  .popup.photo_pop .container{padding:0; width:22.500em; height:22.500em; margin:0 auto;}
+  .bx-controls{display:none}
+  .popup.photo_pop .container .slider_pop div{width:22.500em; height:22.500em }
+  .popup.photo_pop .container .slider_pop img{max-width:22.500em; max-height:22.500em}
+  .popup.photo_pop .container .slider_pop li{height:22.500em}
+  .current-index{color:#3b98bb}
+  #slide-counter{position:fixed; top:0; left:0; width:100%}
+  .popup.photo_pop .container span{color:#ffffff; padding: 0; bottom:-4em; font-size:0.875em; line-height:1.5em; height:3em; overflow:hidden;}
+}
+
+.paging {
+	width:1030px;
+	margin: 20px 650px 50px 650px;
+}

@@ -108,7 +108,5 @@
 			</section>
 			
 			<%@ include file = "./footer.jsp" %>
-	
-	<script type="text/javascript" src="./resources/js/vote_live.js"></script>		
 	</body>
 </html>

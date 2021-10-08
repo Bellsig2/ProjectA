@@ -261,3 +261,8 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
 	color:blue;
 }
 
+.paging {
+	width:1030px;
+	margin: 20px 650px 50px 650px;
+}
+
