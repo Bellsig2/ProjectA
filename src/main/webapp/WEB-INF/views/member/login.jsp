@@ -20,7 +20,7 @@
 					<form action="login" method="post">
 						<div id="input_account_col">
 							<div class="input_account">
-								<input type="text" placeholder="아이디" class="input_member" name="id">
+								<input type="text" placeholder="아이디" class="input_member" name="id" autocomplete="none" id="login_id">
 								<div class="util_tf">
 									<button type="button" class="btn_del">
 										<span class="reset_btn"></span>
@@ -29,20 +29,22 @@
 							</div>
 
 							<div class="input_account">
-								<input type="password" placeholder="비밀번호" class="input_member" name="pw">
+								<input type="password" placeholder="비밀번호" class="input_member" name="pw" id="login_pw">
 								<div class="util_tf">
 									<button type="button" class="btn_del">
 										<span class="reset_btn"></span>
 									</button>
 								</div>
 							</div>
+							<ul class="join_rule" id="login_check">
+							</ul>
 						</div>
 						<div id="login_keep">
 							<label> <input type="checkbox"> <span>로그인 상태 유지</span>
 							</label>
 						</div>
 						<div id="login_con">
-							<button id="login">로그인</button>
+							<button type="button" id="login">로그인</button>
 						</div>
 					</form>
 				</div>
@@ -59,5 +61,32 @@
 	</article>
 	<c:import url="../temp/member_footer.jsp"></c:import>
 	<script type="text/javascript" src="../resources/js/button_del.js"></script>
+
+	<script type="text/javascript">
+		$("#login").click(
+				function() {					
+					$.ajax({
+						type : "post",
+						url : "./check_login",
+						data : {
+							id : $("#login_id").val(),
+							pw : $("#login_pw").val()
+						},
+						success : function(result) {
+							if ($("#login_id").val().length == 0) {
+								$("#login_id").focus();
+								$("#login_check").html("<span class='risk'>아이디를 입력해주세요</span>");
+							}
+							else if ($("#login_pw").val().length == 0) {
+								$("#login_pw").focus();
+								$("#login_check").html("<span class='risk'>비밀번호를 입력해주세요</span>")
+							}
+							else {
+								$("#login_check").html(result)
+							}
+						}
+					})
+				})
+	</script>
 </body>
 </html>

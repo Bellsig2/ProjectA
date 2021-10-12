@@ -26,22 +26,16 @@
 							<div class="find_input_container">
 								<c:if test="${member eq '비밀번호 찾기'}">
 									<div class="input_account">
-										<input type="text" placeholder="아이디" class="input_member" name="" style="ime-mode: disable;">
+										<input type="text" placeholder="아이디" class="input_member" name="">
 										<div class="util_tf">
 											<button type="button" class="btn_del">
 												<span class="reset_btn"></span>
 											</button>
 										</div>
 									</div>
+									<ul class="join_rule" id="id_rule">
+									</ul>
 								</c:if>
-								<div class="input_account">
-									<input type="text" placeholder="생년월일 예) 20010601" class="input_member">
-									<div class="util_tf">
-										<button type="button" class="btn_del">
-											<span class="reset_btn"></span>
-										</button>
-									</div>
-								</div>
 								<div class="input_account">
 									<input type="text" placeholder="휴대폰 번호" class="input_member">
 									<div class="util_tf">
@@ -50,6 +44,8 @@
 										</button>
 									</div>
 								</div>
+								<ul class="join_rule" id="phone_rule">
+								</ul>
 							</div>
 						</div>
 						<div class="label-radio">

@@ -5,6 +5,20 @@
 	padding-right: 134px;
 }
 
+.check_overlap {
+	padding-right: 134px;
+}
+
+.check_overlap_btn {
+	width: 124px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-left: 10px;
+	padding: 0px;
+	margin-top: 0px;
+}
+
 .member_info {
 	display: block;
 	font-size: 13px;
@@ -24,7 +38,7 @@
 	color: #bcbcbc !important;
 }
 
-#id_check {
+/* #id_check {
 	width: 124px;
 	position: absolute;
 	top: 0px;
@@ -32,7 +46,9 @@
 	margin-left: 10px;
 	padding: 0px;
 	margin-top: 0px;
-}
+} */
+
+
 
 .button_unit {
 	color: #fff;
@@ -40,12 +56,11 @@
 }
 
 .btn_del {
-	display:none;
+	display: none;
 	position: absolute;
 	top: 50%;
 	right: 50%;
 	margin: -15px;
-	
 }
 
 .util_tf {
