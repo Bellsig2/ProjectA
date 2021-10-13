@@ -294,6 +294,7 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
   .popup.photo_pop .container span{color:#ffffff; padding: 0; bottom:-4em; font-size:0.875em; line-height:1.5em; height:3em; overflow:hidden;}
 }
 
+
 .paging {
 	width:1030px;
 	margin: 20px 650px 50px 650px;

@@ -29,7 +29,7 @@
 		<section class="replay">
 			<div class="contents">
 				<ul class="vod_list photo">
-					<li>	<a href="javascript:;" onclick="fnPhotoDetail(1630)" );="" return="" false;"="">		<div class="thum">			<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_1.jpg" onerror="https://image.genie.co.kr">		</div>		<div class="tit">			<strong>[엠카 727회] Ending</strong>			<span class="date">2021.10.07<em>7</em></span>		</div>	</a></li>
+					<li>	<a href="javascript:;" onclick="fnPhotoDetail(1630)">		<div class="thum">			<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_1.jpg" onerror="https://image.genie.co.kr">		</div>		<div class="tit">			<strong>[엠카 727회] Ending</strong>			<span class="date">2021.10.07<em>7</em></span>		</div>	</a></li>
 					<li>	<a href="javascript:;" onclick="fnPhotoDetail(1629)" );="" return="" false;"="">		<div class="thum">			<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1629/071742_1.jpg" onerror="https://image.genie.co.kr">		</div>		<div class="tit">			<strong>[엠카 727회] MC</strong>			<span class="date">2021.10.07<em>8</em></span>		</div>	</a></li>
 					<li>	<a href="javascript:;" onclick="fnPhotoDetail(1628)" );="" return="" false;"="">		<div class="thum">			<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1628/071740_1.jpg" onerror="https://image.genie.co.kr">		</div>		<div class="tit">			<strong>[엠카 727회] 키(KEY)</strong>			<span class="date">2021.10.07<em>10</em></span>		</div>	</a></li>
 					<li>	<a href="javascript:;" onclick="fnPhotoDetail(1627)" );="" return="" false;"="">		<div class="thum">			<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1627/071739_1.jpg" onerror="https://image.genie.co.kr">		</div>		<div class="tit">			<strong>[엠카 727회] 양요섭</strong>			<span class="date">2021.10.07<em>10</em></span>		</div>	</a></li>
@@ -47,20 +47,8 @@
 				</ul>
 			</div>
 		</section>
+
 		
-		<div id="photo-pop" class="popup photo_pop" style="display: block; position: fixed; left: 50%; top: 50%; z-index: 100; margin-top: -362.5px; margin-left: -278.5px;">
-			<div class="popup-header">
-				<h3>포토 보기</h3>
-					<button class="layer-close" title="닫기">닫기</button>
-			</div>
-			<div class="container">
-				<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 477px;"><ul id="slideshow" class="slider_pop" style="width: auto; position: relative;"><li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 50; display: block;">	<div>		<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_1.jpg">	</div></li><li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">	<div>		<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_2.jpg">	</div></li><li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">	<div>		<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_3.jpg">	</div></li><li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">	<div>		<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_4.jpg">	</div></li><li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">	<div>		<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_5.jpg">	</div></li><li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">	<div>		<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_6.jpg">	</div></li><li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">	<div>		<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_7.jpg">	</div></li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
-					<div><span id="slideshowTitle">[엠카 727회] Ending_01</span></div>
-						<div id="slide-counter"><strong class="current-index">1</strong>/<em id="slideshowCnt">7</em>
-				</div>
-			</div>
-		</div>
-	
 				<div class=paging>
 					<nav aria-label="...">
 					  <ul class="pagination">
