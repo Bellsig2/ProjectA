@@ -98,4 +98,32 @@ public class MemberController {
 		mv.addObject("member",memberDTO);
 		return mv;
 	}
+	
+	@PostMapping("find_account")
+	public ModelAndView find_account(HttpServletRequest request) {
+		ModelAndView mv = new ModelAndView();
+		MemberDTO memberDTO = new MemberDTO();
+		
+		String phone = request.getParameter("phone");
+		long phone_long = Long.parseLong(phone);
+		
+		memberDTO.setId(request.getParameter("id"));
+		memberDTO.setEmail(request.getParameter("email"));
+		memberDTO.setPhone(phone_long);
+		
+		if(request.getParameter("id") != null && request.getParameter("email") == null && request.getParameter("phone") == null) {
+			memberDTO = memberService.find_id(memberDTO);
+		}
+		else if(request.getParameter("id") == null && request.getParameter("email") != null && request.getParameter("phone") == null) {
+			memberDTO = memberService.find_email(memberDTO);
+		}
+		else if(request.getParameter("id") == null && request.getParameter("email") == null && request.getParameter("phone") != null) {
+			memberDTO = memberService.find_phone(memberDTO);
+		}
+		
+		mv.setViewName("common/find_account");
+		mv.addObject("find_account", memberDTO);
+		mv.addObject("setion", request.getParameter("account"));
+		return mv;
+	}
 }

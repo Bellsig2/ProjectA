@@ -24,4 +24,15 @@
   	SELECT * FROM MUSIC_MEMBER WHERE ID = #{id} AND PW = #{pw}
   </select>
   
+  <select id="find_id" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE ID = #{id}
+  </select>
+  
+  <select id="find_email" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE EMAIL = #{email}
+  </select>
+  
+  <select id="find_phone" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE PHONE = #{phone}
+  </select>
   </mapper>

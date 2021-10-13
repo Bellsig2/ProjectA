@@ -18,15 +18,19 @@
 		</section>
 		<section id="setion_container2">
 			<div id="setion">
-				<form action="">
+				<form action="find_account">
 					<div id="label_con">
 						<div class="label-radio">
-							<label class="find_check_con"> <input type="radio" checked="checked" class="find_check" name=""> <span class="find_ment">등록된 번호로 찾기</span>
+						<c:if test="${member eq '비밀번호 찾기'}">
+							<label class="find_check_con"> <input type="radio" checked="checked" class="find_check" name=""> <c:if test="${member eq '비밀번호 찾기'}">
+									<span class="find_ment">등록된 아이디로 찾기</span>
+								</c:if>
+
 							</label>
-							<div class="find_input_container">
-								<c:if test="${member eq '비밀번호 찾기'}">
+		
+							<div class="find_input_container" id="find_with_phone_con">
 									<div class="input_account">
-										<input type="text" placeholder="아이디" class="input_member" name="">
+										<input type="text" placeholder="아이디" class="input_member" name="id" id="find_pw_with_id">
 										<div class="util_tf">
 											<button type="button" class="btn_del">
 												<span class="reset_btn"></span>
@@ -35,35 +39,15 @@
 									</div>
 									<ul class="join_rule" id="id_rule">
 									</ul>
-								</c:if>
-								<div class="input_account">
-									<input type="text" placeholder="휴대폰 번호" class="input_member">
-									<div class="util_tf">
-										<button type="button" class="btn_del">
-											<span class="reset_btn"></span>
-										</button>
-									</div>
-								</div>
-								<ul class="join_rule" id="phone_rule">
-								</ul>
 							</div>
+							</c:if>
 						</div>
 						<div class="label-radio">
 							<label class="find_check_con"> <input type="radio" class="find_check" name=""> <span class="find_ment">등록된 이메일로 찾기</span>
 							</label>
 							<div class="find_input_container">
-								<c:if test="${member eq '비밀번호 찾기'}">
-									<div class="input_account">
-										<input type="text" placeholder="아이디" class="input_member">
-										<div class="util_tf">
-											<button type="button" class="btn_del">
-												<span class="reset_btn"></span>
-											</button>
-										</div>
-									</div>
-								</c:if>
 								<div class="input_account">
-									<input type="text" placeholder="이메일" class="input_member">
+									<input type="text" placeholder="이메일" class="input_member" id="find_with_email" name="email">
 									<div class="util_tf">
 										<button type="button" class="btn_del">
 											<span class="reset_btn"></span>
@@ -78,7 +62,7 @@
 							</label>
 							<div class="find_input_container">
 								<div class="input_account">
-									<input type="text" placeholder="휴대폰 번호" class="input_member">
+									<input type="text" placeholder="휴대폰 번호" class="input_member" id="find_with_phone" name="phone">
 									<div class="util_tf">
 										<button type="button" class="btn_del">
 											<span class="reset_btn"></span>
@@ -95,7 +79,7 @@
 							<li>위 방법으로 찾기가 어려우신 경우, 지니 고객센터(1577-5337)에 문의하시면 본인 확인 절차 후 안내해 드립니다.</li>
 						</ul>
 						<div class="wrap_btn">
-							<a href="#" id="submit_btn">확인</a>
+							<button id="submit_btn" type="button" class="input_member button_unit">확인</button>
 						</div>
 					</div>
 				</form>
@@ -116,9 +100,39 @@
 			$('.find_check').prop('checked', false)
 			$(this).prop('checked', true)
 			check();
+			disabled_input();
 		})
-
 		check();
+
+		let disabled_input = function() {
+			$(".find_input_container").each(
+					function(i, element) {
+						if (element.style.display == "none") {
+							$(this).children().children(".input_member").prop(
+									"disabled", true)
+						} else {
+							$(this).children().children(".input_member").prop(
+									"disabled", false)
+						}
+					})
+		}
+		$("#submit_btn").on({
+			click : function(){
+				$.ajax({
+					type : "POST",
+					url : "./find_account",
+					data : {
+						id : $("#find_pw_with_id").val(),
+						email : $("#find_with_email").val(),
+						phone : $("#find_with_phone").val(),
+						account : $("#setion_header_pn").text(),
+					},
+					success: function(result){
+						console.log(result)
+					}
+				})
+			}
+		})
 	</script>
 	<script type="text/javascript" src="../resources/js/button_del.js"></script>
 </body>

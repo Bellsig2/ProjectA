@@ -88,7 +88,7 @@
 					</ul>
 					
 					<div class="wrap_btn">
-						<button id="join_btn" type="submit" class="input_member  button_unit">가입하기</button>
+						<button id="join_btn" type="submit" class="input_member button_unit disabled" disabled="disabled">가입하기</button>
 					</div>
 				</form>
 			</div>

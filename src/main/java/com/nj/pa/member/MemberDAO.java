@@ -31,4 +31,15 @@ public class MemberDAO {
 		return session.selectOne(NAMESAPCE + "login_select", memberDTO);
 	}
 
+	public MemberDTO find_id(MemberDTO memberDTO) {
+		return session.selectOne(NAMESAPCE+ "find_id", memberDTO);
+	}
+	
+	public MemberDTO find_email(MemberDTO memberDTO) {
+		return session.selectOne(NAMESAPCE+ "find_email", memberDTO);
+	}
+	
+	public MemberDTO find_phone(MemberDTO memberDTO) {
+		return session.selectOne(NAMESAPCE+ "find_phone", memberDTO);
+	}
 }

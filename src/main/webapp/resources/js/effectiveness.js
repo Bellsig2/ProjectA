@@ -16,6 +16,7 @@ let overlap_email = false;
 let overlap_phone = false;
 
 
+
 /* 회원가입 유효성 */
 
 /* 회원가입 유효성 함수 */
@@ -108,6 +109,16 @@ let warnig_email_msg = function(check) {
 	}
 }
 
+let join_check = function(){
+	if(overlap_id && overlap_pw && same_pw && overlap_email && overlap_phone) {
+		$("#join_btn").prop("disabled", false);
+		$("#join_btn").removeClass("disabled");
+	}
+	else {
+		$("#join_btn").prop("disabled", true);
+		$("#join_btn").addClass("disabled");
+	}
+}
 /* make Function */
 
 /* use Function  */
@@ -143,6 +154,7 @@ $("#id_check").click(function() {
 				$('#id_check').addClass(
 					'disabled', "disabled");
 				overlap_id = true;
+				join_check();
 
 			} else {
 				$("#id_rule")
@@ -163,12 +175,14 @@ $("#id_cancel").click(function() {
 $("#join_pw").keyup(function() {
 	let check = check_password();
 	overlap_pw = ment_password(check);
+	join_check();
 })
 
 /* 비밀번호 중복 검사 */
 $("#join_pw_check").keyup(function() {
 	let check = check_password_overlap();
 	same_pw = ment_password_overlap(check);
+	join_check();
 })
 
 /* 이메일 */
@@ -261,6 +275,7 @@ $("#email_check").on({
 					$("#email_check").attr("display", true);
 					$("#email_check").addClass("disabled");
 					overlap_email = true;
+					join_check();
 				}
 				else {
 					$("#email_rule").html('<span class="risk">이미 사용중인 이메일 입니다.</span>')
@@ -274,6 +289,7 @@ $("#join_number").on({
 	keyup: function() {
 		let check = disabled_overlap_phone_btn();
 		ment_phone(check);
+		join_check();
 	},
 })
 
@@ -288,6 +304,7 @@ $("#phone_check").click(function() {
 				$("#phone_check").attr("display", true);
 				$("#phone_check").addClass("disabled");
 				overlap_phone = true;
+				join_check();
 			}
 			else {
 				$("#phone_check").removeClass("disabled");
@@ -295,4 +312,6 @@ $("#phone_check").click(function() {
 		}
 	})
 })
+
+
 

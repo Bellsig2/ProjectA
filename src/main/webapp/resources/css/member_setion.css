@@ -53,10 +53,9 @@
 }
 
 #submit_btn {
+	width:100%;
 	text-decoration: none;
 	height: 58px;
-	background-color: #eeeeef !important;
-	color: #bcbcbc !important;
 	display: flex;
 	flex: 1 0 50px;
 	justify-content: center;

@@ -27,5 +27,17 @@ public class MemberService {
 	public MemberDTO login_select(MemberDTO memberDTO) {
 		return memberDAO.login_select(memberDTO);
 	}
+	
+	public MemberDTO find_id(MemberDTO memberDTO) {
+		return memberDAO.find_id(memberDTO);
+	}
+	
+	public MemberDTO find_email(MemberDTO memberDTO) {
+		return memberDAO.find_email(memberDTO);
+	}
+	
+	public MemberDTO find_phone(MemberDTO memberDTO) {
+		return memberDAO.find_phone(memberDTO);
+	}
 
 }
