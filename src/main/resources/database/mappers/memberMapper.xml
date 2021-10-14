@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.nj.pa.member.MemberDAO">
+  <insert id="insertJoin" parameterType="MemberDTO">
+  	INSERT INTO MUSIC_MEMBER VALUES(#{id}, #{pw}, #{email}, #{phone})
+  </insert>
+  	
+  <select id="check_id" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE ID = #{id}
+  </select>
+  
+  <select id="check_email" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE EMAIL = #{email}
+  </select>
+  
+  <select id="check_phone" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE PHONE = #{phone}
+  </select>
+  
+  <select id="login_select" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE ID = #{id} AND PW = #{pw}
+  </select>
+  
+  <select id="find_id" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE ID = #{id}
+  </select>
+  
+  <select id="find_email" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE EMAIL = #{email}
+  </select>
+  
+  <select id="find_phone" parameterType="MemberDTO" resultType="MemberDTO">
+  	SELECT * FROM MUSIC_MEMBER WHERE PHONE = #{phone}
+  </select>
+  </mapper>
