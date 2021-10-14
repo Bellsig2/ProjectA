@@ -5,4 +5,22 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
+	<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
+		<property name="username" value="user02"></property>
+		<property name="password" value="user02"></property>
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe"></property> <!-- 후에 서버로 사용할 IP로 변경 -->
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+	</bean>
+	
+	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="mapperLocations" value="classpath:database/mappers/*Mapper.xml"></property>
+		<property name="configLocation" value="classpath:database/config/myBatisConfig.xml"></property>
+	</bean>
+	
+	<bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSession">
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"></constructor-arg>
+	</bean> 
+		
+		
 </beans>
