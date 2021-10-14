@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<c:import url="../temp/boot_head.jsp"></c:import>
+<c:import url="../temp/member_head.jsp"></c:import>
 <link href="../resources/css/member_login.css" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Insert title here</title>

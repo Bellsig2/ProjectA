@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
-<c:import url="../temp/boot_head.jsp"></c:import>
+<c:import url="../temp/member_head.jsp"></c:import>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
