@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, input, select, textarea, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { padding: 0; margin: 0; vertical-align: middle; box-sizing: border-box; font-weight:normal}
+
+header, footer, section, article, menu, nav, aside { display: block; }
+html {font-size: 18px; letter-spacing: -.035em; -webkit-overflow-scrolling: touch; overflow-y: scroll;}
+html, body { width: 100%; -webkit-text-size-adjust: none; font-family: "Spoqa Han Sans"; color:#2e3037}
+body { overflow-x: visible; position: relative; min-width: 320px; -webkit-text-size-adjust: none; justify-content: center; align-items: flex-start; word-break: keep-all; min-height:100%; background:#fbfbfb}
+ul, ol { list-style-type: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+img, fieldset { border: 0; outline: none; }
+label { cursor: pointer; }
+a { text-decoration: none; outline: none !important; color: #2e3037;}
+i, em, address, span { font-style: normal; vertical-align:top}
+button { padding: 0; border: none; background: none; font-size: inherit; line-height: 1.567em; letter-spacing: -.035em; cursor: pointer; outline:none}
+caption, legend { visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0; }
+iframe, object, video, embed { position: relative; top: 0; left: 0; max-width: 100%; }
+.blind, .hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
+input:focus, select:focus {border-color: #f2880a !important;}
+select::-ms-expand { display: none; }
+input::-ms-clear { display: none; }
+body { width: 100%; min-width: 1160px; overflow: visible;}
+.content {position: relative; margin: 0 auto; box-sizing: border-box; letter-spacing: -.025em; }
+.content .desc { line-height: 33px; font-size: 24px; }
+.hide {display:block;overflow:hidden;height:0;margin:0;padding:0;line-height:0;text-indent:-99999px}
+
+
+/* icon */
+.tit_area .more:after, .chart_view li .play, .chart_view li .rank .down:after, .chart_view li .rank .up:after, .stit_area .chart_date a, .stit_area .chart_date span, .vote_list li .thum .play, .info .chart_info li .pick, .vote_area.realtime ul li.vs, .captcha-wrap .btn-refresh:before, .agree_chk input.checkbox + label:before, .agree_chk input.checkbox:checked + label:before, .btn-service a, .btn-service-sub a, .vod_list li .tit .date em, .bx-controls-direction a, .vote_list li .thum .pick
+{background: url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/ico.png) no-repeat 0 0;}
+@media screen and (max-width: 1071px) {
+}
+
+.wrap{margin:0 auto; min-width:1080px;}
+.contents{width:1030px; margin:0 auto; position:relative}
+.btn a{background: url(//image.genie.co.kr/imageg/web/promo_2019/festival/btn.png) no-repeat;}
+@media screen and (max-width: 1071px) {
+  body{background: #fafafa;}
+  .wrap{margin:0 auto; min-width:320px; max-width:1080px;overflow:hidden; padding-bottom:2.083em}
+  .contents{width:100%; padding:0 0.917em}
+}
+
+
+#menu{
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+	border-bottom: 0.5px solid #f2f2f2;
+}
+
+#menu li{
+	display:inline;
+}
+
+#menu button{
+	display:inline-block;
+	padding:10px;
+	width:180px;
+	height:60px;
+	border:0;
+	outline:0;
+	font-size:20px;
+}
+
+.live {
+	color:blue;
+}
+
+.click{
+	width:70px;
+	height:0px;
+	border:2px solid blue;
+	margin : 0 auto;
+	transform: translateX(130%);
+	background-color:blue;
+} 
+
+.box1_1 {
+	width:100%;
+	height:200px;
+	clear:both;
+ 
+}
+
+.intro {
+	list-style:none;
+	text-align:center;
+	position: relative;
+    top: 55px;
+}
+
+.title1 {
+	font-size:27px;
+}
+
+.title2{
+	font-size:65px;
+}
+
+.title3{
+	padding-top:20px;
+}
+
+/* sub */
+.info h4{padding:70px 0 5px; font-size:24px}
+.info .chart_info{color:#939393; font-size:18px; line-height:34px; padding-bottom: 60px;}
+.info .chart_info li{padding-left:13px; position:relative;}
+.info .chart_info li:after{content:"-"; display:block; clear:both; position:absolute; left:0; top:0;}
+.info .chart_info li .pick{display:inline-block; text-indent:-9999em; width:85px; height:28px; background-position:-268px 0; vertical-align: middle}
+.info .graff{height:133px; background:url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/graff2.png) 0 0 no-repeat; text-indent:-9999em}
+
+@media screen and (max-width: 1071px) {
+  .info h4{padding:1.5em 0 0.7em; font-size:0.875em; font-weight:700}
+  .info .chart_info{font-size:0.750em; line-height:1.6em; padding-bottom:2em;}
+  .info .chart_info li{padding-left:0.7em;}
+  .info .chart_info li:after{content:"Â·"}
+  .info .chart_info li .pick{width:3.813em; height:1.281em; background-position:0 -10.250em; background-size:15.625em}
+  .info .graff{position:relative; padding-top:19.5em; background:none; text-indent:0; height:auto;}
+  .info .graff:before{content:""; width:100%; height:1px; background:#ecf0f1; position:absolute; left:0; top:18.5em}
+  .info .graff:after{content:"";position:absolute; left:50%; top:0%; transform:translateX(-50%); height:16.5em; width:15.771em; background:url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/graff2.png) left bottom no-repeat ; background-size:21.458em; }
+  .info .graff li{font-size:0.833em; color:#000000; line-height:2.5em; padding-left:2em; position:relative}
+  .info .graff li span{position:absolute; right:0.8em; top:0;}
+  .info .graff li:after{content:""; position:absolute; left:0.550em; top:0.9em; width:0.700em; height:0.700em; border-radius:50%}
+  .info .graff li.co01:after{background:#ff5266}
+  .info .graff li.co01 span{color:#ff5266}
+  .info .graff li.co02:after{background:#0eb6e5}
+  .info .graff li.co02 span{color:#0eb6e5}
+  .info .graff li.co03:after{background:#a2ce55}
+  .info .graff li.co03 span{color:#a2ce55}
+  .info .graff li.co04:after{background:#31c7c6}
+  .info .graff li.co04 span{color:#31c7c6}
+  .info .graff li.co05:after{background:#ffb05b}
+  .info .graff li.co05 span{color:#ffb05b}
+  .info .graff li.co06:after{background:#8e6dde}
+  .info .graff li.co06 span{color:#8e6dde}
+}
+
+
+/* 투표 */
+.subtab{background:#ffffff; border-bottom:2px solid #f2f2f2; text-align:center}
+.subtab li{line-height:69px; display:inline-block; padding:0 20px; position:relative}
+.subtab li a{font-size:22px; display: block;}
+.subtab li.on a{color:#2626d6;}
+.subtab li.on:after{content:""; position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:82px; height:4px; background:#2525f1; }
+.stit_area .m_tit{font-size:30px; }
+@media screen and (max-width:1071px) {
+  .subtab{border-bottom:1px solid #f2f2f2; }
+  .subtab:after{content:""; display:block; clear:both}
+  .subtab li{padding:0; line-height:2.771em; width:50%; float:left;}
+  .subtab li a{font-size:0.833em}
+  .subtab li.on:after{width:2.083em; height:0.125em}
+}
+
+/* 투표상세 */
+.vote_area{width:1030px; margin:0 auto}
+.vote_list{width:100%; }
+.vote_list:after{display:block; clear:both; content:""; }
+.vote_list li .thum .mask {display:block;position:absolute;top:0;left:0;width:320px;height:320px;border:1px solid #000;opacity:0.1;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)';filter:alpha(opacity=10)}
+.vote_list li{width:320px; float:left; margin:70px 0px 0 35px;position:relative;}
+.vote_list li:nth-child(3n+1){margin-left:0;}
+.vote_list li .thum{width:100%; height:320px; text-align:center; position:relative; }
+.vote_list li .thum a{display:block; }
+.vote_list li .thum img{width:100%; height:100%; }
+.vote_list li .thum .pick{position:absolute; left:-9px; top:-5px; width:78px; height:29px; background-position:-268px 0; text-indent:-9999em}
+.vote_list li .thum .play{position:absolute; right:12px; bottom:12px; width:55px; height:55px; text-indent:-9999em; background-position:-201px 0; z-index:1}
+.vote_list li .rank{position:absolute; left:0; top:350px; z-index:2; color:#5a96ff; font-size:20px; text-align:center; font-weight:700; display:block; width:70px}
+.vote_list li .rank strong{font-family: "Teko-Bold"; font-size:54px; color:#969699; display:block; font-style:italic; line-height:40px; padding-top:0}
+.vote_list li strong{padding-top:20px; display:block;}
+.vote_list li strong a{color:#111111; padding-left:86px; position:relative; display:block; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; font-size:26px; text-align:left}
+.realtime .vote_list li strong a, .realtime .vote_list li .artist a{padding-left:5px}
+.vote_list li .artist a{padding-left:86px;color:#525252;font-size:20px; height:30px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; display:block; color:#525252; text-align:left}
+.vote_list li .go_vote{width:100%; height:60px; line-height:60px; color:#ffffff;font-size:22px; display:block; background:#a4d23f; text-align:center; border-radius:0.5em; margin-top:40px}
+.vote_list li .go_vote.end{background:#ffffff; color:#969699; border:1px solid #c8c8ca; line-height:58px;}
+
+.vote_area.realtime{position:relative}
+.vote_area.realtime ul{width:100%; text-align:center;}
+.vote_area.realtime ul li{display:inline-block; float: inherit;}
+.vote_area.realtime ul li.vs{position:absolute; left:460px; top:180px; margin:0; width:112px; height:112px; background-position:-357px 0; text-indent:-9999em;z-index:1}
+.info.realtime .contents{width:700px;}
+
+@media screen and (max-width:1071px) {
+  .stit_area .m_tit{font-size:0.750em; margin-bottom:0.2em}
+  .vote_area{width:100%; padding: 0 0.938em;}
+  .vote_list{border-bottom:1px solid #e9edef; border-top:1px solid #e9edef; padding-bottom:0.8em; width:100%}
+  .vote_list li{padding:0 6em 0 5.479em; height:3em; margin:0.833em 0 0 0; width:100%; }
+  .realtime .vote_list li{padding-left:3.8em}
+  .vote_list li:first-child{margin-top:0.833em}
+  .vote_list li .thum{width:3em; height:3em; position: absolute; left: 0; top: 0;}
+  .vote_list li .thum .pick{left:auto; top:auto; right:-0.2em; bottom:-0.2em; width:2.354em; height:0.875em; background-position:-0.021em -6.833em; background-size:10.417em}
+  .vote_list li .thum .play{display:none}
+  .vote_list li .thum .mask{width:3em; height:3em}
+  .vote_list li .rank{left:5.2em; font-size:0.563em; width:4.370em;top:0}
+  .vote_list li .rank strong{font-size:1.630em; line-height:1.8em;}
+  .vote_list li strong{padding-top:0}
+  .vote_list li strong a{padding-left:0; line-height:1.75em; font-size:0.875em; }
+  .vote_list li .artist a{font-size:0.750em; padding-left:0; line-height:1.5em}
+  .realtime .vote_list li strong a, .realtime .vote_list li .artist a{padding-left:0}
+  .vote_list li .go_vote{margin-top:0; position:absolute; right:0; top:0.88em; width:6.222em; height:2.222em; line-height:2.222em; font-size:0.750em; border-radius: 1.2em;}
+  .vote_list li .go_vote.end{line-height:2em}
+  .info.realtime .contents{width:100%}
+  .vote_area.realtime ul li.vs{display:none}
+}
+
+.info_txt{width:990px; margin:0 auto; font-size:30px; font-weight: 300; padding:85px 0 110px 0}
+.info_text_img{height:503px; background:url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/info_text.png) 108px 0 no-repeat; text-indent:-9999em;}
+
+.info_txt p{display:none}
+.mcount_go{display:inline-block; line-height:80px; padding:0 60px; background:#000; margin-bottom:-70px;font-size:24px; color:#ffffff; border-radius:40px; margin-top:40px; background: #51cfff;
+  background: -moz-linear-gradient(-45deg,  #51cfff 0%, #a187ff 87%);
+  background: -webkit-linear-gradient(-45deg,  #51cfff 0%,#a187ff 87%);
+  background: linear-gradient(135deg,  #51cfff 0%,#a187ff 87%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51cfff', endColorstr='#a187ff',GradientType=1 ); }
+.cont_area{background:url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/info_bg.png) center center no-repeat; background-position:top}
+.cont_area .main_bnr{margin-bottom:-60px}
+.info_txt li{font-weight:300}
+.cont_area .map{width:675px; height:328px; background:url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/map.jpg) 0 0 no-repeat; margin:0 auto; text-indent:-9999em}
+@media screen and (max-width: 1071px) {
+  .info_text_img{height:20rem; background:url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/info_text_m.png) center center no-repeat; text-indent:-9999em; margin:0.5769rem 0 1.6539rem; background-size:20.625rem}
+  .info_txt{font-size:0.750em; font-weight:400; color:#939393; line-height:1.6em; margin: 0 0.938em; padding: 1.5em 0 0 0; width:auto; border-top:1px solid #e9edef; }
+  .info_txt p{display:block; font-size:0.833em; padding:1.5em 0 1.2em}
+  .mcount_go{margin:0.5em 0 0; font-size:0.833em; line-height:2.750em; padding:0 1.900em}
+  .info_txt li{text-align:left; font-weight:400; position:relative; padding-left:0.7em}
+  .info_txt li:after{content:"Â·"; position:absolute; left:0; top:0;}
+  .cont_area .main_bnr{margin-bottom:-2.083em}
+  .cont_area .map{width:20.667em; height:10.083em; background-size:20.625em; background-position:0 -7.708em; margin-top:1.5em;}
+}
+
+/* reply */
+.reply{ width:100%; background: #ffffff;}
+.reply .contents{padding:50px 0 100px; margin-bottom:-60px}
+.note .def-btn { color: #999999; margin-top: -12px; height: 27px; }
+.note .def-btn em { color: #f38175; font-style: normal; position: relative; top: 3px; }
+.reply h4{height: 136px; text-align:center;font-size:36px; overflow: hidden; position: relative;font-weight:200;}
+.reply h4 span{vertical-align:top; font-weight:400}
+.reply .profile { overflow: hidden; position: absolute; width: 2.125em; height: 2.125em; margin-right: 1.829268%; border-radius: 50%; }
+.reply .profile:before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0.0625em solid rgba(0, 0, 0, 0.1); border-radius: 50%; }
+.reply .profile img { display: block; width: 100%; border-radius: 50%; }
+.reply .comment{ position: relative; text-align: left; }
+.reply .btn-submit { display: block; position: absolute; top: 0; bottom: 0; right: 0; width: 3.1875em; line-height: 0; text-indent: -9999px; z-index:1; }
+.reply .btn-submit:before { content: ''; display: block; position: absolute; top: 50%; left: 1.0416666666em; width: 1.125em; height: 1.125em; margin-top: -0.5625em; background: url("//image.genie.co.kr/imageg/mobile_web/common/blt_reply.png") no-repeat 0 0; background-size: 5em auto; }
+.reply .btn-more { display: block; width: 100%; text-align: center; }
+.reply .btn-more span { display: inline-block; position: relative; height: 3.3055555555em; padding: 0 3.36111111111em 0 2em; font-size: 0.75rem; line-height: 3.30555555555em; }
+.reply .btn-more span:before { content: ''; display: block; position: absolute; top: 50%; right: 1.5em; width: 0.6875em; height: 0.375em; margin-top: -0.2291666666em; font-size: 1rem; background: url("//image.genie.co.kr/imageg/mobile_web/common/blt_reply.png") no-repeat 0 -3.83333em; background-size: 5em auto; }
+.reply .input-comment { padding: 1.0625em 1em 1em; background-color: #f7f9fc; border-bottom: 0.0625em solid #eef1f4; }
+.reply .input-comment .user { position: relative; height: 2.125em; margin-bottom: 0.6875em; padding-left: 2.5em; }
+.reply .input-comment .profile { top: 0; left: 0; }
+.reply .user a { display: block; overflow: hidden; float: left; position: relative; width: 48.26%; height: 3.09090909090909em; margin-left: 1.52439%; padding: 0 4.5731707317% 0 10.365853658536%; border-radius: 1.54545454545454em; font-size: 0.6875rem; line-height: 3.181818181818em; text-align: center; }
+.list-comment .range { display: block; text-align: right; border-bottom: 1px solid #e3e3e3; padding: 30px 0 12px; color: #cccccc; font-size: 14px; }
+.list-comment .range a { color: #999999; padding: 0 8px; position: relative; }
+.list-comment .range a.on { font-weight: bold; color: #444444; }
+.list-comment .range a:first-of-type { margin-right: 8px; }
+.list-comment .range a:first-of-type:after { content: ""; position: absolute; right: -5px; top: 4px; width: 1px; height: 13px; background: #999999; }
+.comment-title {margin:0px 0 13px; position:relative}
+.tit-box h3 {display: inline-block; vertical-align: baseline;}
+.tit-box .article {display: inline; zoom: 1; margin: 0; padding-left: 5px; vertical-align: baseline; font-size: 11px; line-height: 15px; color: #999;}
+.tit-box .article strong{color: #f68074; vertical-align: baseline;}
+.comment-title .note {font-size: 11px; color: #999; position: absolute; top: 4px; right: 0; text-align: right; letter-spacing: 0;}
+.def-btn {display: inline-block; min-width: 30px; text-align: center; line-height: 21px; vertical-align: middle; font-size: 11px; color: #666; padding: 1px 10px 0; border-radius: 3px; border: 1px solid #ccc; background-color: #fff;}
+.def-btn:hover { border-color: #9f9f9f; background-color: #fafafa;}
+.page-nav a { line-height: 20px; }
+.reply .user .info { display: block; }
+.reply .user a:before { content: ''; display: block; position: absolute; top: 0.6444444444em; left: 7.43405275779%; width: 0.9375em; height: 0.9375em; font-size: 1rem; background: url("//image.genie.co.kr/imageg/mobile_web/common/blt_reply.png") no-repeat 0 -1.4375em; background-size: 5em auto; }
+.reply .user a.disconnect { opacity: 0.5; }
+.reply .user .btn-fb { background-color: #365097; }
+.reply .user .btn-twitter { background-color: #3999e1; }
+.reply .user .btn-twitter:before { background-position: -1.1875em -1.4375em; }
+.reply .textarea { overflow: hidden; height: 2.857142857142857em; min-height: 2.857142857142857em; padding: 0.6666666666em 3.642857142857em 0.6666666666em 0.8095238095238em; resize: none; display: inline-block; width: 100%; font-size: 0.875rem;
+  line-height: 1.42857142857em; border: 0.07142857em solid #d7dbde; border-radius: 0.142857142857em; -webkit-appearance: none; font-family: 'Spoqa Han Sans'}
+.reply .btns { padding-bottom: 0.3958333333em; }
+.reply .btns button { display: inline-block; position: relative; line-height: 2; }
+.reply .btns button:before { content: ''; display: block; position: absolute; top: 50%; left: 0; width: 1em; height: 1.05em; font-size: 1rem; margin-top: -0.45em; background: url("//image.genie.co.kr/imageg/mobile_web/common/blt_reply.png") no-repeat 0 -2.6em; background-size: 5em auto; }
+.reply .btns .btn-like { padding: 0 1em 0 1.743589743589em; font-size: 0.8125rem; }
+.reply .btns .btn-like.active:before { background-position: -1.1875em -2.6875em; }
+.reply .btns .btn-reply {padding: 0 1em 0 1.743589743589em; }
+.reply .btns .btn-reply:before { background-position: -2.375em -2.6em; }
+.reply .btns .btn-report { display: block; position: absolute; top: 0; right: 0; width: 3em; height: 3em; }
+.reply .btns .btn-report:before { left: 0.5em; background-position: -3.625em -2.6875em; }
+.reply .btns .btn-del { display: block; position: absolute; top: 0; right: 0; width: 3em; height: 3em; }
+.reply .btns .btn-del:before { left: 0.5em; width: 1em; height: 1em; margin-top: -0.5em; background-position: -2.625em 0; }
+.reply .list-comment li { display: block; position: relative; padding: 0.875em 1em 0 3.75em; border-bottom: 0.0625em solid #e5e9ec; }
+.reply .list-comment .profile { top: 1em; left: 1em; }
+.reply .list-comment .info { line-height: 1.27; }
+.reply .list-comment .user { display: inline-block; vertical-align: top; }
+.reply .list-comment .icon { display: inline-block; width: 1em; height: 1em; margin: 0.125em 0 0 0.0416666666em; font-size: 1rem; line-height: 0; background: url("//image.genie.co.kr/imageg/mobile_web/common/blt_reply.png") no-repeat -2.375em -1.4375em; background-size: 5em auto; text-indent: -9999px; vertical-align: top; }
+.reply .list-comment .icon.blt-fb { background-position: -3.625em -1.4375em; }
+.reply .list-comment .date { display: block; padding-top: 0.05555555555em; font-size: 0.75rem; }
+.reply .list-comment .txt, .popup .reply .list-comment .txt { display: block; padding: 0.6666666666em 0 0.311111111111em; font-size: 0.9375rem; line-height: 1.466666666666em; text-align: left; word-break: break-all; }
+.reply .list-comment .no-data { display: block; padding: 5em 0; font-size: 0.9375rem; line-height: 1.4666666666em; text-align: center; }
+.reply .list-reply { display: none; margin: 0 -1em 0 -3.75em; padding: 0 1em 0 3.5em; border-top: 0.0625em solid #e5e9ec; background-color: #f7f9fc; }
+.reply .list-reply.active { display: block; }
+.reply .list-reply li { padding: 0.6875em 0 0 0.3125em; }
+.reply .list-reply li:before, .reply .input-reply .comment:before { content: ''; display: block; position: absolute; top: 1.22916666666em; left: -1.9166666666em; width: 1em; height: 1.1875em; background: url("//image.genie.co.kr/imageg/mobile_web/common/blt_reply.png") no-repeat -1.375em 0; background-size: 5em auto; }
+.reply .input-reply .comment:before { top: 0.7291666666em; }
+.reply .list-reply .profile { top: 0.875em; left: 0.125em; width: 1.875em; height: 1.875em; }
+.reply .list-reply .info { padding-left: 2.25em; }
+.reply .list-reply .user { display: inline-block; font-size: 0.9375rem; }
+.reply .list-reply .icon { margin-top: 0.08333333333em; }
+.reply .list-reply .date { padding-top: 0; }
+.reply .list-reply .txt { padding: 0.6923076923em 0 0.4102564102564em; font-size: 0.8125rem; line-height: 1.3846153846em; }
+.reply .list-reply .btns { padding-bottom: 0.5625em; }
+.reply .list-reply .btn-like { padding-left: 1.743589743589em; font-size: 0.8125rem; line-height: 2.230769230769em; }
+.reply .list-reply .btn-report, .reply .list-reply .btn-del { right: -1em; }
+.reply .input-reply .comment { position: relative; margin-top: 1em; }
+.reply .input-reply .btn-fold { display: block; width: 100%; }
+.reply .input-reply .btn-fold span { display: inline-block; position: relative; height: 3.3055555555em; padding: 0 3.36111111111em 0 2em; font-size: 0.75rem; line-height: 3.30555555555em; }
+.reply .input-reply .btn-fold span:before { content: ''; display: block; position: absolute; top: 50%; right: 1.5em; width: 0.66667em; height: 0.375em; margin-top: -0.2291666666em; font-size: 1rem; background: url("//image.genie.co.kr/imageg/mobile_web/common/blt_reply.png") no-repeat -1.1875em -3.83333em; background-size: 5em auto; }
+.page-nav { margin-top: 20px; }
+.reply .btn-more { display: none; color: #444; }
+@media screen and (max-width: 1071px) { .reply { width: 100%; margin-bottom: 0px; }
+  .contents{width:100%;}
+  .reply .contents{padding:0; margin-bottom:-2.083em}
+  .reply .btns button:before { top: 45%; }
+  .reply .btns .btn-reply:before { top: 47%; }
+  .reply h4 { line-height: 75px; font-size: 19px; }
+  .list-comment .range a:first-of-type:after { top: 1px; }
+  .list-comment .range { padding: 15px 0; font-size: 12px; }
+  .btn_reply_rule { padding-right: 5px; }
+  .reply .btn-more { display: block; }
+  .comment-title, .page-nav { display: none; }
+  .reply h4{height:4rem; background: #fafafa; font-size:1.375em;}
+  .reply h4:after { width: 11.03125rem; height: 1.25rem; margin: 2.5rem auto 0 auto; background-image: url(//image.genie.co.kr/imageg/web/promo_2019/0312/m/comment_title.png); background-size: 11.03125rem 1.25rem; }
+  .reply .input-comment{background:#fafafa}
+}

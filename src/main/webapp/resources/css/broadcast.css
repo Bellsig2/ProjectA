@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+.mainbody {
+	width:100%;
+	height:592px;
+	text-align:center;
+}
+
+.MCmain {
+	width:100%;
+	height:324px;
+	background-color:rgb(203, 215, 239);
+	text-align:center;
+}
