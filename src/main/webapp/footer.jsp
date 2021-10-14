@@ -14,12 +14,12 @@
 					<div class="logo">
 						<div class="genie">
 							<a href="https://www.geniemusic.co.kr/">
-								<img src="./resources/images/footer_logo.png">
+								<img src="./resources/image/footer_logo.png">
 							</a>
 						</div>
 						<div class="fb">
 							<a href="https://www.facebook.com/genieplay">
-								<img src="./resources/images/fb_logo.png">
+								<img src="./resources/image/fb_logo.png">
 							</a>
 						</div>
 					</div>

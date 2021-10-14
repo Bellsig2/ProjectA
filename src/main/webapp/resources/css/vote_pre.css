@@ -149,9 +149,9 @@ body { width: 100%; min-width: 1160px; overflow-x: visible; overflow-y: visible;
   .vote_area.realtime ul li.vs{display:none}
 }
 
-/* .excep {
-	height:504.4px;
-} */
+.excep {
+	height:499.6px;
+}
 
 /* .info .contents {
 	width:100%;

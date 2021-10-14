@@ -181,7 +181,7 @@
 				
 				
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94226972', '', '1');return false;" class="play">재생</a>
@@ -256,7 +256,7 @@
 					
 				</li>
 				
-				<li class="excep">
+				<li>
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('93906695', '', '1');return false;" class="play">재생</a>
@@ -530,6 +530,7 @@
 						<a href="javascript:;" class="go_vote end">투표마감</a>
 					
 				</li>
+				
 
 
 </ul>

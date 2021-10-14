@@ -12,11 +12,11 @@
 	<%@ include file = "./header.jsp" %>
 		<div class="body">
 			<div class="mainbody">
-				<img src="./resources/images/mainbody_2.jpg">
+				<img src="./resources/image/mainbody_2.jpg">
 			</div>
 			
 			<div class="MCmain">
-				<img src="./resources/images/MCmain.jpg">
+				<img src="./resources/image/MCmain.jpg">
 			</div>
 		</div>
 		

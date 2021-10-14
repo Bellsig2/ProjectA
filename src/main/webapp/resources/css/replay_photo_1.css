@@ -294,6 +294,168 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
   .popup.photo_pop .container span{color:#ffffff; padding: 0; bottom:-4em; font-size:0.875em; line-height:1.5em; height:3em; overflow:hidden;}
 }
 
+/* popup */
+.mtb-scroll{overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch; max-height:569px !important}
+.mtb-scroll::-webkit-scrollbar {width: 8px;height: 8px;border: 3px solid #fff}
+.mtb-scroll::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: block;height: 1px;background: #efefef}
+.mtb-scroll::-webkit-scrollbar-track {background: #efefef}
+.mtb-scroll::-webkit-scrollbar-thumb {height: 50px;width: 50px;background: rgba(0,0,0,.2)}
+
+.modalLayer{background:url(//image.genie.co.kr/imageg/web/promo_2018/common/modal_bg.png) repeat 0 0}
+.popup{display:none;position:relative;width:495px; outline:none; background:#ffffff}
+.popup .popup-header{position:relative;height:62px; background: #5A96FF;
+  background-size:100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5A96FF', endColorstr='#7db9e8',GradientType=1 );
+  padding:0;text-align:left}
+.popup .popup-header h3{margin:0 0 0 20px;display:inline-block;font-size:22px;color:#fff;line-height:59px; }
+.popup .popup-header .layer-close{position:absolute;top:16px;right:15px;width:30px;height:30px;background:url(//image.genie.co.kr/imageg/web/promo_2019/festival/btn_close.gif) no-repeat 5px 5px;text-indent:-9999px}
+.popup .popup-content {background-color: #fff; padding:40px 30px; text-align: center; color: #222222; }
+.popup .popup-content strong{display:inline-block;font-size:34px;color:#2a4d8a;line-height:40px; letter-spacing: -2px; }
+.popup .popup-content p{font-size:20px; color:#7e868c; line-height:32px; padding-top:30px}
+.popup .popup-content p span{color:#2a4d8a; font-weight:700}
+.popup .popup-content.charge{background:#fafafa; padding-top:0}
+.popup .popup-content.charge a{background:#5b6b86; color:#ffffff; font-size:20px; display:inline-block; border-radius:30px; line-height:60px; padding:0 45px; margin-top:17px}
+.popup .popup-content .vote_go{padding:30px 0 0}
+.popup .popup-content .vote_go dt{width:152px; height:152px; display:inline-block;}
+.popup .popup-content .vote_go dt img{width:100%; border-radius:50%}
+.popup .popup-content .vote_go dd{display:block;}
+.popup .popup-content .vote_go dd.tit{color:#111111; font-size:30px; padding:12px 0 2px}
+.popup .popup-content .vote_go dd.artist{color:#7e868c; font-size:20px; margin-bottom:25px}
+.popup .popup-content .stxt{font-size:18px; color:#7e868c; text-align:center; line-height:25px; padding-top:20px}
+
+.popup .popup-footer{position:relative;height:84px;border-top:1px solid #2a4d8a;margin:0 30px}
+.popup .popup-footer button{display:block;color:#2a4d8a;width:100%;font-size:22px;text-indent:0;box-sizing:border-box;}
+.popup .popup-footer button span{top:0;left:0;line-height:84px;width:100%;text-align:center;font-weight:700;font-family: "Spoqa Han Sans";}
+.popup .popup-footer.col-2{overflow:hidden}
+.popup .popup-footer.col-2 button{width:50%;float:left;position:relative;}
+.popup .popup-footer.col-2 button:first-child{border-right:1px solid #d6d6d6}
+.popup .popup-info{width:100%;box-sizing:border-box;text-align:left;padding-left:36px}
+.popup .popup-info ul{padding-top:7px;word-break:keep-all;line-height:32px}
+.popup .popup-info ul li{position:relative;padding-left:17px;padding-top:8px}
+.popup .popup-info ul li:before{content:'ㆍ';display:block;position:absolute;left:0;font-size:14px;font-weight:700}
+.popup .popup-footer.double{overflow:hidden}
+.popup .popup-footer.double button{width:50%;float:left;position:relative}
+
+.popup.infotxt .popup-content{text-align: left;}
+.popup.infotxt .popup-content h4{font-size:24px; color:#2a4d8a; line-height:32px;}
+.popup.infotxt dl dt{font-size:18px; font-weight:900; padding-top:20px; color:#000000}
+.popup.infotxt dl dd{font-size:16px; position:relative; padding-left:15px; color:#7e858b; line-height:30px}
+.popup.infotxt dl dd:after{content:"-"; position:absolute; left:2px; top:0;}
+.popup.infotxt dl dd.nodot:after{content:""}
+.popup.infotxt dl dd span{color:#00b5e5}
+
+.captcha-wrap{position:relative; width:100%; height:50px; margin-bottom:5px; border-radius:3px; background:#fafafa; padding:7px 0 0 15px}
+.captcha-wrap img{display:block;height:37px; vertical-align:middle}
+.captcha-wrap .btn-refresh {display:block;position:absolute;top:0;bottom:0;right:0;width:2.625em;height:100%;font-size:1rem;line-height:0;text-indent:-9999px}
+.captcha-wrap .btn-refresh:before {content:'';display:block;position:absolute;top:50%;left:50%;width:25px;height:25px;background-position:-193px -59px; margin: -13px 0 0 -13px;}
+.ipt-wrap input{border-radius:5px; background:#fafafa; width:100%;height:50px; border:none; font-size:18px; text-indent:15px}
+.ipt-wrap input::placeholder{color:#c2c5c7}
+
+.popup .popup-content .agree{padding-top:30px;}
+.popup .popup-content .agree li{position:relative; color:#7e868c; text-align:left; padding-left:12px;}
+.popup .popup-content .agree li:after{content:"-"; position:absolute; left:0; top:0;}
+.popup .agree_chk{position:relative; text-align:left; padding-top:30px; color:#7d7d7d}
+.popup .agree_chk label{padding-left:65px}
+.popup .agree_chk input.checkbox {opacity:0;filter:alpha(opacity=0);position:absolute;left:1px;top:0}
+.agree_chk input.checkbox + label:before{content:''; width:50px; height:50px; position:absolute; left:0; top:20px; background-position:-70px -61px}
+.agree_chk input.checkbox:checked + label:before {background-position:-126px -61px; }
+.agree_chk input.checkbox:checked + label{color:#2a4d8a; font-weight:700}
+.ipt-wrap{position:relative;}
+.ipt-wrap.mobile_confirm{margin:40px 0 0;}
+.ipt-wrap.mobile_confirm + .mobile_confirm{margin:9px 0 0;}
+.ipt-wrap .btn-send{position:absolute; right:0; top:0; width:140px; background:#7d7d7d; color:#ffffff; font-size:18px; line-height:50px; text-align:center; border-radius:4px}
+.ipt-wrap .time{position:absolute; right:13px; top:10px; color:#619aff}
+
+.popup.chk{margin-bottom:2rem}
+.popup.chk form{position:absolute; bottom:-1.5rem; left:5px; color: #ffffff;font-size: 16px;font-weight: 400;padding-top:5px}
+.popup.chk form label{padding-left:10px;letter-spacing:0}
+.popup .popup-content p.notice_txt{padding-top:0; color:#000000; font-size:30px; line-height:40px}
+.popup .popup-content p.notice_txt + .notice_txt{padding-top:10px}
+.popup .popup-content p.notice_txt span{color:#2a4d8a; border-bottom:1px solid #2a4d8a}
+.agree2 ul{font-size: 18px;font-weight: 900;color: #000000; text-align:left;}
+.agree2 li{font-size: 16px; line-height: 30px;}
+.agree2 li span{color: rgb(218, 58, 73);}
+.popup .popup-content .sstxt{font-size:18px; padding-top:0;}
+.border{border-bottom: 1px solid #7e868c; color: #7e868c !important; font-weight: inherit !important;}
+.service .popup-content { padding: 40px 16px;}
+.service_txt span:nth-child(1){color:#696d6f !important;}
+/* chart popup*/
+.popup .popup-content .chart{width:415px; margin:0 auto}
+/* .popup .popup-content .stxt2{float: left; text-align: left} */
+.popup .popup-content .txt2{line-height: 30px}
+.clear{clear:both}
+.popup .popup-content .line{width:300px; background:rgba(0,0,0,0.3); height:1px; margin:0 auto; margin-top:30px}
+.popup .popup-content .line2{margin-top:0}
+
+@media screen and (max-width: 1071px) {
+  .popup.chk form{font-size:0.750em}
+  .mtb-scroll{max-height:22em !important;}
+  .popup{width:18.750em; min-width:auto }
+  .popup .popup-header{height:2.333em; }
+  .popup .popup-header h3{line-height:2.6em;font-size:0.875em; margin: 0 0 0 1.071em;}
+  .popup .popup-header .layer-close{top:0; right:0; width:2.3em; height:2.3em; background:url(//image.genie.co.kr/imageg/web/promo_2019/festival/m/btn_close.gif) no-repeat 0.6em 0.6em; background-size:1.063em}
+  .popup .popup-content strong{font-size:1.125em; line-height:1.3em; letter-spacing:-0.02em}
+  .popup .popup-content{padding:1.471em 0.917em;font-size:100%; }
+  .popup .popup-content strong.end{padding-top: 0.7em;}
+  .popup .pop_txt{font-size:1.063em; line-height:1.4em;}
+  .popup .logo{background-position: 0 -11.250em; width:6.375em; height:2.156em; margin-bottom: 0.844em; background-size: 18.750em;}
+  .popup .pop_txt span{font-size:0.938em; padding-top:0.6em; line-height:1.5em}
+  .popup .sh_txt{font-size:0.625em; padding:1.500em 2em 0;margin-bottom:-1em;}
+  .popup .popup-footer button{font-size: 0.875em;height:3.143em}
+  .popup .popup-footer{height:2.750em; margin: 0 0.917em;}
+  .popup .popup-footer button span{line-height:3.143em}
+
+  .popup.infotxt .popup-content h4{font-size:1.125em; line-height:1.5em}
+  .popup.infotxt dl dt{font-size:0.875em; padding-top:1.071em;}
+  .popup.infotxt dl dd{font-size:0.750em; padding-left:0.8em; line-height:1.75em;}
+
+  .popup .popup-content p{font-size:0.750em; line-height:1.5em;padding-top:1.829em;}
+  .popup .popup-content.charge a{font-size:0.625em; border-radius: 5em; line-height:3.333em; padding:0 1.563em; margin-top:1.143em;}
+  .popup .popup-content .vote_go{padding-top:0.625em}
+  .popup .popup-content .vote_go dt{width:4.167em; height:4.167em}
+  .popup .popup-content .vote_go dd.tit{font-size:0.917em; padding:0.4em 0 0.1em}
+  .popup .popup-content .vote_go dd.artist{font-size:0.750em; margin-bottom:1.8em;}
+
+  .captcha-wrap{height:2em; margin-bottom:0.188em; padding: 0.3em 0 0 0.5em;}
+  .captcha-wrap img{height:1.458em}
+  .ipt-wrap input{height:2.941em; font-size:0.750em; text-indent:0.8em; border-radius: 0.3em}
+  .captcha-wrap .btn-refresh:before{width:0.875em; height:0.875em; background-position:-6.042em -6.813em; background-size:10.417em; margin: -0.4em 0 0 -0.4em;}
+  .popup .popup-content .stxt{font-size:0.750em; line-height:1.4em; padding-top:1em;}
+
+  .popup .popup-content .agree{padding-top:1.471em }
+  .popup .popup-content .agree li{font-size:0.750em; padding-left:0.7em; line-height:1.7em}
+  .popup .agree_chk{font-size:0.750em; padding-top:2em;}
+  .popup .agree_chk label{padding-left:2.857em}
+  .agree_chk input.checkbox + label:before{width:2.143em; height:2.143em; top:1.8em; background-position:-5.179em -11.714em; background-size:17.857em}
+  .agree_chk input.checkbox:checked + label:before{background-position:-7.607em -11.714em;background-size:17.857em}
+  .ipt-wrap.mobile_confirm{margin:1.5em 0 0;}
+  .ipt-wrap.mobile_confirm + .mobile_confirm{margin:0.3em 0 0;}
+  .ipt-wrap.mobile_confirm input{border:0.05em solid #e6e6e6;}
+  .ipt-wrap .btn-send{font-size:0.750em; width:7.333em; height: 2.941em; line-height: 2.941em; border-radius:0.2em}
+  .ipt-wrap .time{right:1em; top:0.7em; font-size:0.750em}
+  .popup .popup-content p.notice_txt{font-size: 1em; line-height:1.3em}
+  .popup .popup-content p.notice_txt + .notice_txt{padding-top:0.5em}
+  .agree2 ul{font-size: 0.875em}
+  /* chart popup*/
+  .popup .popup-content .chart{width:17.18rem}
+  .popup .popup-content .txt2{line-height:1.6em}
+  .popup .popup-content .line{width:12.308em; background:rgba(0,0,0,0.3); height:1px; margin:0 auto; margin-top:1.5em}
+  .popup .popup-content .line2{margin-top:0}
+}
+
+.modal_bg {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
 
 .paging {
 	width:1030px;

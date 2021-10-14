@@ -40,7 +40,7 @@
 						<li><a href="./vote_pre.jsp" onclick="fn_menu_move('/vote/pre')">투표</a></li>
 						<li><a href="./broadcast.jsp"
 							onclick="fn_menu_move('/broadcast/info')">방송정보</a></li>
-						<li style="display: inline-block;"><a href="javascript:;"
+						<li style="display: inline-block;"><a href="./replay_vod_1.jsp"
 							onclick="fn_menu_move('/replay/vod')">영상</a></li>
 						<li style="display: inline-block;"><a href="javascript:;"
 							onclick="fn_menu_move('/replay/photo')">포토</a></li>
