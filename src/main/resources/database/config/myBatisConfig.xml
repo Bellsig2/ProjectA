@@ -6,5 +6,6 @@
   <configuration>
   	<typeAliases>
   		<typeAlias type="com.nj.pa.member.MemberDTO" alias="MemberDTO"/>
+  		<typeAlias type="com.nj.pa.board.BoardDTO" alias="BoardDTO"/>
   	</typeAliases>
   </configuration>
