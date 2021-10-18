@@ -306,7 +306,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94160633', '', '1');return false;" class="play">재생</a>
@@ -331,7 +331,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94227263', '', '1');return false;" class="play">재생</a>
@@ -356,7 +356,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94337053', '', '1');return false;" class="play">재생</a>
@@ -431,7 +431,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94276579', '', '1');return false;" class="play">재생</a>
@@ -506,7 +506,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94199820', '', '1');return false;" class="play">재생</a>
