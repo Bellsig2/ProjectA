@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.wrap {
+	padding-bottom: 60px
+}
+
+.board_wrap {
+	width:980px;
+	margin:0 auto;
+}
+
+.title_area_board {
+	padding:40px 0 10px;
+}
+
+.board_table {
+	font-family: "Spoqa Han Sans";
+    color: black;
+    width: 100%;
+    font-size: 14px;
+    color: #27282d;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.25px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+tr {
+	display:table-row;
+}
+
+
+ .board_table thead {
+	display:table-header-group;
+	border-color: inherit;
+} 
+
+.board_table thead tr {
+    line-height: 33px;
+    border-top: 1px solid rgba(0,0,0,.05);
+    border-bottom: 2px solid rgba(0,0,0,.1);
+}
+
+.board_table tbody tr {
+	font-size: 15px;
+	line-height: 60px;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.board_table tbody tr:hover {
+	background-color: rgba(0,0,0,.05)
+}
+
+.select_qna {
+	width:770px;
+	display:inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.title {
+	text-align: left;
+}

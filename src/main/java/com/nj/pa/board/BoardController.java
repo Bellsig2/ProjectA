@@ -2,9 +2,12 @@ package com.nj.pa.board;
 
 import java.util.List;
 
+import javax.servlet.ServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,10 +21,51 @@ public class BoardController {
 	public ModelAndView getList() {
 		ModelAndView mv = new ModelAndView();
 		List<BoardDTO> board = boardService.get_list();
-		System.out.println(board.get(1).getTitle());
 		mv.addObject("board", board);
 		mv.setViewName("/board/list");
-		
 		return mv;
+	}
+	
+	@GetMapping("select")
+	public ModelAndView getSelect(BoardDTO boardDTO) {
+		ModelAndView mv = new ModelAndView();
+		boardDTO = boardService.board_select(boardDTO);
+		mv.addObject("board", boardDTO);
+		mv.setViewName("/board/select");
+		return mv;
+	}
+	
+	@GetMapping("insert")
+	public ModelAndView setInsert() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/insert");
+		return mv;
+	}
+	
+	@PostMapping("insert")
+	public String setInsert(BoardDTO boardDTO) {
+		boardDTO.setWriter("ADMIN");
+		int insert = boardService.board_insert(boardDTO);
+		return "redirect:./qna";
+	}
+	
+	@GetMapping("del")
+	public String setDel(BoardDTO boardDTO) {
+		boardService.board_del(boardDTO);
+		return "redirect:./qna";
+	}
+	
+	@GetMapping("update")
+	public ModelAndView setUpdate(BoardDTO boardDTO) {
+		boardDTO = boardService.board_select(boardDTO);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("board", boardDTO);
+		mv.setViewName("/board/update");
+		return mv;
+	}
+	@PostMapping("update")
+	public String setUpdate(BoardDTO boardDTO, ServletRequest request) {
+		boardService.board_update(boardDTO);
+		return "redirect:./qna";
 	}
 }

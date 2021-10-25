@@ -4,6 +4,7 @@
 <html>
 <head>
 <link href="../resources/css/boardSection.css" rel="stylesheet">
+<link href="../resources/css/board_select.css" rel="stylesheet">
 <!-- Jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <meta charset="UTF-8">
@@ -17,43 +18,42 @@
 				<div class="title_area_board">
 					<h2 class="board_title">공지사항</h2>
 				</div>
-				<table class="board_table">
-					<colgroup>
-						<col style="width: 100px">
-						<col>
-						<col style="width: 110px">
-						<col style="width: 110px">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>No</th>
-							<th>제목</th>
-							<th>작성일</th>
-						</tr>
-					</thead>
-					<tbody>
-						<c:forEach var="board" items="${board}" varStatus="status">
-							<tr class="tr_ms_hover">
-								<td class="num">${board.num}</td>
-								<td class="title">
-									<a href='<c:url value='/board/select?num=${board.num}'/>' class="select_qna">${board.title}</a>
-								</td>
-								<td class="date">${board.write_date}</td>
-							</tr>
-						</c:forEach>
-					</tbody>
-				</table>
+				<div class="title_con">
+					<dl>
+						<dt>제목</dt>
+						<dd>${board.title}</dd>
+					</dl>
+					<dl>
+						<dt>등록일</dt>
+						<dd>${board.write_date}</dd>
+					</dl>
+				</div>
+				<div class="board_con">
+					${board.write_con}
+				</div>
+			
 				<div class="btn_con">
 					<div class="left">
-						<a href='<c:url value="/board/insert"/>'>글쓰기</a>
+						<a href="./qna">목록</a>
+					</div>
+					
+					<div class="right">
+						<button class="crud_btn" id="del">삭제</button>
+						<button class="crud_btb" id="update">수정</button>
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
+	<input id="param_num" value="${board.num}" type="hidden">
 	<c:import url="../footer.jsp"></c:import>
 	<script type="text/javascript">
-		
+		$("#del").click(function(){
+			location.href = "./del?num="+$("#param_num").val();
+		})
+		$("#update").click(function(){
+			location.href = "./update?num="+$("#param_num").val();
+		})
 	</script>
 </body>
 </html>

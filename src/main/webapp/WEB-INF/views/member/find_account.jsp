@@ -4,9 +4,6 @@
 <html>
 <head>
 <c:import url="../temp/member_head.jsp"></c:import>
-<script type="text/javascript">
-	
-</script>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>

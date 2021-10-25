@@ -2,9 +2,36 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-  
-  <mapper namespace="com.nj.pa.board.BoardDAO">
-  	<select id="get_list" resultType="BoardDTO">
-  		SELECT * FROM MUSIC_QNA ORDER BY NUM DESC
-  	</select>
-  </mapper>
+
+<mapper namespace="com.nj.pa.board.BoardDAO">
+	<select id="get_list" resultType="BoardDTO">
+		SELECT * FROM MUSIC_QNA ORDER BY NUM DESC
+	</select>
+	
+	<select id="board_select" resultType="BoardDTO" parameterType="BoardDTO">
+		SELECT * FROM MUSIC_QNA WHERE NUM = #{num}
+	</select>
+	
+	<insert id="board_insert" parameterType="BoardDTO">
+		INSERT INTO MUSIC_QNA VALUES(
+		MUSIC_QNA_SEQ.NEXTVAL,
+		#{title},
+		SYSDATE,
+		#{write_con},
+		#{writer}
+		)
+	</insert>
+	
+	<delete id="board_del" parameterType="BoardDTO">
+		DELETE FROM MUSIC_QNA WHERE NUM = #{num}
+	</delete>
+	
+	<update id="board_update" parameterType = "BoardDTO">
+		UPDATE MUSIC_QNA
+		SET 
+		TITLE = #{title} ,
+		WRITE_CON = #{write_con}
+		WHERE
+		NUM = #{num}
+	</update>
+</mapper>
