@@ -68,4 +68,5 @@ public class BoardController {
 		boardService.board_update(boardDTO);
 		return "redirect:./qna";
 	}
+
 }
