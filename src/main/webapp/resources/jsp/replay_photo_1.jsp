@@ -79,6 +79,6 @@
 				
 		<%@ include file = "footer.jsp" %>
 					
-		<script type="text/javascript" src="./resources/js/replay_photo_1.js"></script>
+		<script type="text/javascript" src="../resources/js/replay_photo_1.js"></script>
 	</body>
 </html>
