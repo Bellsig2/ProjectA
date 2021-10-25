@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+#article_con {
+	margin: 0 auto;
+	padding: 56px 0 0 0;
+}
+
+#setion_header {
+	padding: 26px 0px 4px;
+	text-align: center;
+	box-sizing: border-box;
+	min-height: 70px;
+}
+
+#setion {
+	position: relative;
+	margin: 5px auto 20px auto;
+	border-radius: 2px;
+	box-sizing: border-box;
+	border: 1px solid #e6e6e6;
+	padding: 40px;
+	min-height: 360px;
+	max-width: 482px;
+}
+
+#label_con {
+	padding: 0 0 20px 0;
+}
+
+.find_check_con {
+	line-height: 47px;
+}
+
+.check_icon {
+	background-image: "../image/login_icon.png"
+}
+
+.find_ment {
+	font-size: 15px;
+	color: #4c4c4c;
+	cursor: pointer;
+}
+
+#info {
+	list-style: none;
+	font-size: 12px;
+	font-weight: 400;
+	color: #8a8a8d;
+}
+
+#submit_btn_con {
+	border-radius: 10px;
+}
+
+#submit_btn {
+	width:100%;
+	text-decoration: none;
+	height: 58px;
+	display: flex;
+	flex: 1 0 50px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.wrap_btn {
+	margin-top: 40px;
+}
+
+.risk {
+	color: #f37e7b;
+}
+
+.success {
+	color : #0096ff;
+}
+
+.lisk_icon {
+	background-image: url("../image/login_icon.png");
+	background-position: -33.33333px -33.33333px;
+}
+.inline-block {
+	margin: -11px;
+	margin-right: -9px;
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 12px;
+	display: inline-block;
+	text-align: right;
+	line-height: 23px;
+}

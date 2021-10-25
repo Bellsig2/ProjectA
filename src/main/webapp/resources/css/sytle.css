@@ -1,0 +1,887 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, input, select, textarea, dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
+	th, td, article, aside, canvas, details, embed, figure, figcaption,
+	footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+	mark, audio, video {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	box-sizing: border-box;
+	font-weight: normal
+}
+
+header, footer, section, article, menu, nav, aside {
+	display: block;
+}
+
+html {
+	font-size: 20px;
+	letter-spacing: -.035em;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
+}
+
+html, body {
+	width: 100%;
+	-webkit-text-size-adjust: none;
+	font-family: "Spoqa Han Sans";
+	color: #2e3037
+}
+
+body {
+	overflow-x: hidden;
+	position: relative;
+	min-width: 320px;
+	-webkit-text-size-adjust: none;
+	justify-content: center;
+	align-items: flex-start;
+	word-break: keep-all;
+	min-height: 100%;
+	background: #fbfbfb
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img, fieldset {
+	border: 0;
+	outline: none;
+}
+
+label {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	outline: none !important;
+	color: #2e3037;
+}
+
+i, em, address, span {
+	font-style: normal;
+	vertical-align: top
+}
+
+button {
+	padding: 0;
+	border: none;
+	background: none;
+	font-size: inherit;
+	line-height: 1.567em;
+	letter-spacing: -.035em;
+	cursor: pointer;
+	outline: none
+}
+
+caption, legend {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+iframe, object, video, embed {
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+}
+
+.blind, .hidden {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+input:focus, select:focus {
+	border-color: #f2880a !important;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+body {
+	width: 100%;
+	min-width: 1160px;
+	overflow: hidden;
+}
+
+.content {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	letter-spacing: -.025em;
+}
+
+.content .desc {
+	line-height: 33px;
+	font-size: 24px;
+}
+
+.hide {
+	display: block;
+	overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	text-indent: -99999px
+}
+
+/* gnb */
+.gnb-area {
+	width: 100%;
+	z-index: 30;
+	background: #000;
+	font-family: dotum, 'ë‹ì›€', arial, verdana, hevetica, geneva,
+		sans-serif;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.gnb-area {
+	width: 100%;
+	/* min-width: 1071px; */
+	height: 40px;
+	z-index: 30;
+	font-family: dotum, 'ë‹ì›€', arial, verdana, hevetica, geneva,
+		sans-serif;
+	background: #000;
+}
+
+.gnb {
+	position: relative;
+	width: 1080px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 11px
+}
+
+.gnb-area a {
+	color: #fff;
+	opacity: .6
+}
+
+.gnb-area a:hover {
+	color: #fff;
+	opacity: 1
+}
+
+.gnb-area a.home {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	display: block;
+	color: #fff;
+	opacity: .6
+}
+
+.gnb-area a.home:hover {
+	color: #fff;
+	opacity: 1
+}
+
+.gnb-area ul {
+	position: absolute;
+	top: 12px;
+	right: 0;
+	height: 17px;
+	line-height: 19px
+}
+
+.gnb-area ul li {
+	float: left;
+	padding: 0 9px;
+	background:
+		url(//image.genie.co.kr/imageg/web/promo_2018/common/social.png)
+		no-repeat 100% 3px;
+	line-height: 20px
+}
+
+.gnb-area ul li:last-child {
+	background: none
+}
+
+.header {
+	width: 100%;
+	background: linear-gradient(87deg, #e6e6e6 50%, #f2f2f2 50%);
+}
+
+.header .contents {
+	width: 100%;
+	height: 320px;
+	background: url(../image/header_bg.png) no-repeat 0 0;
+	background-size: cover;
+	background-position: -9rem;
+}
+
+.header h1 {
+	font-size: 100%;
+	width: 320px;
+	height: 200px;
+	background: url(../image/logo2.png) no-repeat 0 0;
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	transform: translateX(-50%);
+	text-indent: -9999em
+}
+
+.header h1 a {
+	display: block;
+	height: 100%
+}
+
+.header .menu {
+	position: absolute;
+	left: 50%;
+	top: 250px;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%
+}
+
+.header .menu li {
+	margin: 0 22px;
+	display: inline-block;
+}
+
+.header .menu li a {
+	color: #1a1a1a;
+	display: block;
+	background:
+		url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/tit2.png)
+		no-repeat 0 0;
+	text-indent: -9999em;
+	text-align: center
+}
+
+.header .menu li:nth-child(1) a {
+	width: 195px
+}
+
+.header .menu li.on:nth-child(1) a {
+	background-position: 0 -33px;
+}
+
+.header .menu li:nth-child(2) a {
+	background-position: -215px 0;
+	width: 52px
+}
+
+.header .menu li.on:nth-child(2) a {
+	background-position: -215px -33px;
+}
+
+.header .menu li:nth-child(3) a {
+	background-position: -283px 0;
+	width: 96px
+}
+
+.header .menu li.on:nth-child(3) a {
+	background-position: -283px -33px;
+}
+
+.header .menu li:nth-child(4) a {
+	background-position: -398px 0;
+	width: 96px
+}
+
+.header .menu li.on:nth-child(4) a {
+	background-position: -398px -33px;
+}
+
+.header .menu li:nth-child(5) {
+	display: none
+}
+
+.header .menu li:nth-child(6) a {
+	background-position: -513px 0;
+	width: 96px
+}
+
+.header .menu li.on:nth-child(6) a {
+	background-position: -513px -33px;
+}
+
+.main_bnr{width:100%; text-align: center}
+.main_bnr img{width:100%;} /* 이미지 크기 조절*/
+
+.content {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	letter-spacing: -.025em;
+}
+
+.content .desc {
+	line-height: 33px;
+	font-size: 24px;
+}
+
+.hide {
+	display: block;
+	overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	text-indent: -99999px
+}
+
+.vod_list:after {
+	display: block;
+	clear: both;
+	content: ""
+}
+
+.vod_list li {
+	width: 320px;
+	float: left;
+	margin-left: 35px;
+	border: 1px solid #f1f1f1;
+	background: #ffffff
+}
+
+.vod_list li a {
+	display: block;
+}
+
+.vod_list li:first-child {
+	margin-left: 0
+}
+
+.vod_list li .thum {
+	position: relative;
+	height: 180px;
+}
+
+.vod_list li .thum img {
+	width: 100%;
+	height: 100%
+}
+
+.vod_list li .thum em {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: 'dotum';
+	background: rgba(0, 0, 0, 0.2);
+	padding: 4px;
+	border-radius: 2px
+}
+
+.vod_list li .tit {
+	padding: 13px 22px;
+	height: 100px
+}
+
+.vod_list li .tit strong {
+	font-size: 20px;
+	color: #000000;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* 라인수 */
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	line-height: 1.2em;
+	max-height: 2.4em;
+	word-break: break-all;
+}
+
+.vod_list li .tit .artist {
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+}
+
+.vod_list li:nth-child(4) {
+	display: none
+}
+
+.vod_list li .tit .date {
+	font-size: 12px;
+	color: #899095;
+	display: block;
+	padding-top: 5px
+}
+
+.vod_list li .tit .date em {
+	background-position: -242px -61px;
+	padding-left: 22px;
+	margin-left: 22px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 16px;
+}
+
+
+
+.wrap h2 {
+	font-size: 26px;
+	color: #525252;
+	font-family: 'NotoSans';
+	font-style: italic;
+	display: inline-block;
+	letter-spacing: -1px;
+}
+
+.tit_area {
+	position: relative;
+	padding: 60px 0 18px;
+}
+
+.tit_area .more {
+	position: absolute;
+	right: 0;
+	top: 65px;
+	font-size: 14px;
+	padding-right: 14px;
+}
+
+.tit_area .more:after {
+	content: "";
+	background-position: 0 0;
+	width: 10px;
+	height: 14px;
+	position: absolute;
+	right: 0;
+	top: 6px;
+}
+
+.tit_area .date {
+	color: #525252;
+	font-family: "Spoqa Han Sans";
+	font-size: 18px;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.stit_area {
+	padding: 77px 0 70px;
+	text-align: Center
+}
+
+.stit_area h3 {
+	font-size: 72px;
+	letter-spacing: -2px;
+	line-height: 80px;
+}
+
+.stit_area .chart_date {
+	font-size: 30px;
+	color: #525252;
+	padding: 12px 0
+}
+
+.stit_area .chart_date a, .stit_area .chart_date span {
+	text-indent: -9999em;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+	vertical-align: -10px
+}
+
+.stit_area .chart_date .first {
+	background-position: -115px 2px;
+}
+
+.stit_area .chart_date .prev {
+	background-position: -115px -27px;
+}
+
+.stit_area .chart_date .next {
+	background-position: -162px -27px
+}
+
+.stit_area .chart_date .end {
+	background-position: -162px 2px;
+}
+
+.stit_area .onair {
+	color: #525252;
+	font-size: 20px;
+	display: block;
+	line-height: 30px;
+}
+
+.stit_area .onair em {
+	font-size: 16px
+}
+
+.stit_area .mt {
+	margin: 35px 0 -70px
+}
+
+.stit_area .onair i {
+	color: #939393;
+	padding-right: 0.4em
+}
+
+.lineup .main_bnr {
+	padding: 10px 0
+}
+
+.lineup .artist_lineup {
+	background: #fff;
+	border: 1px solid #f8f8f8;
+	border-top: none;
+	border-bottom: 1px solid #f1f1f1;
+	padding: 30px;
+	line-height: 35px;
+	font-size: 20px;
+}
+
+.lineup {
+    width:1030px;
+    box-sizing: border-box;
+    margin:auto;
+}
+
+.hot{
+    width:1030px;
+    box-sizing: border-box;
+    margin:auto;
+}
+.chart{
+	 width:1030px;
+    box-sizing: border-box;
+    margin:auto;
+}
+.contents{ width:1030px;
+    box-sizing: border-box;
+    margin:auto;}
+
+
+
+
+/* COUNTDOWN CHART */
+.chart_view li {
+	display: block;
+	padding: 0 50px 0 135px;
+	height: 74px;
+	margin-top: 22px;
+	position: relative
+}
+
+.chart_view li:first-child {
+	margin-top: 0;
+}
+
+.chart_view li .thum {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 74px;
+	height: 74px;
+	display: block;
+}
+
+.chart_view li .thum img {
+	width: 100%
+}
+
+.chart_view li .thum .mask {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 74px;
+	height: 74px;
+	border: 1px solid #000;
+	opacity: 0.1;
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)';
+	filter: alpha(opacity = 10)
+}
+
+.chart_view li .rank {
+	position: absolute;
+	left: 75px;
+	top: 10px;
+	width: 60px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.chart_view li .rank.win strong {
+	color: #0000ff;
+}
+
+.chart_view li .rank strong {
+	font-family: "Teko-Bold";
+	font-size: 24px;
+	color: #969699;
+	display: block;
+	line-height: 32px;
+	font-style: italic;
+}
+
+.chart_view li .rank em {
+	position: relative;
+}
+
+.chart_view li .rank em.new {
+	color: #98d600
+}
+
+.chart_view li .rank em.static {
+	text-indent: -9999em;
+	display: block;
+}
+
+.chart_view li .rank em.static:after {
+	width: 10px;
+	height: 2px;
+	background: #b2babe;
+	position: absolute;
+	left: 50%;
+	top: 12px;
+	transform: translateX(-50%);
+}
+
+.chart_view li .rank em:after {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	content: "";
+	width: 10px;
+	height: 8px;
+}
+
+.chart_view li .rank .down {
+	padding-left: 14px;
+	background-position: 0 0;
+	color: #7094cd;
+}
+
+.chart_view li .rank .down:after {
+	background-position: -23px 0;
+}
+
+.chart_view li .rank .up {
+	padding-left: 14px;
+	color: #f1828f
+}
+
+.chart_view li .rank .up:after {
+	background-position: -44px 0;
+}
+
+.chart_view li strong {
+	display: block;
+	font-size: 22px;
+	color: #2e3037;
+}
+
+.chart_view li strong a {
+	overflow: hidden;
+	display: block;
+	line-height: 32px;
+	padding-top: 5px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	 
+}
+
+.chart_view li .artist {
+	color: #7e868c;
+	font-size: 18px;
+	overflow: hidden
+}
+
+.chart_view li .artist a {
+	color: #7e868c;
+	overflow: hidden;
+	display: block;
+	line-height: 30px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	 
+}
+
+.chart_view li .play {
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	background-position: -66px 5px;
+	text-indent: -9999em
+}
+
+.footer_bnr {
+	width: 1030px;
+	margin: 0 auto;
+	padding: 58px 0 0 0
+}
+
+.tit_area .more:after, .chart_view li .play, .chart_view li .rank .down:after,
+	.chart_view li .rank .up:after, .stit_area .chart_date a, .stit_area .chart_date span,
+	.vote_list li .thum .play, .info .chart_info li .pick, .vote_area.realtime ul li.vs,
+	.captcha-wrap .btn-refresh:before, .agree_chk input.checkbox+label:before,
+	.agree_chk input.checkbox:checked+label:before, .btn-service a,
+	.btn-service-sub a, .vod_list li .tit .date em, .bx-controls-direction a,
+	.vote_list li .thum .pick {
+	background:
+		url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/ico.png)
+		no-repeat 0 0;
+}
+
+.wrap h2 {
+	font-size: 26px;
+	color: #525252;
+	font-family: 'NotoSans';
+	font-style: italic;
+	display: inline-block;
+	letter-spacing: -1px;
+}
+
+.wrap h2 {
+	font-family: "Spoqa Han Sans";
+	font-size: 1.250em;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.lineup .artist_lineup {
+	padding: 1.154em 0.846em;
+	font-size: 1.083em;
+	line-height: 1.5em;
+}
+
+.info h4 {
+	padding: 70px 0 5px;
+	font-size: 24px
+}
+
+.info .chart_info {
+	color: #939393;
+	font-size: 18px;
+	line-height: 34px;
+	padding-bottom: 60px;
+}
+
+.info .chart_info li {
+	padding-left: 13px;
+	position: relative;
+}
+
+.info .chart_info li:after {
+	content: "-";
+	display: block;
+	clear: both;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.info .chart_info li .pick {
+	display: inline-block;
+	text-indent: -9999em;
+	width: 85px;
+	height: 28px;
+	background-position: -268px 0;
+	vertical-align: middle
+}
+
+.info .graff {
+	background:
+		url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/graff2.png) 0
+		0 no-repeat;
+	text-indent: -9999em
+}
+
+.wrap {
+	margin: 0 auto;
+	min-width: 1080px;
+	padding-bottom: 60px
+}
+
+.tit_area .more:after, .chart_view li .play, .chart_view li .rank .down:after,
+	.chart_view li .rank .up:after, .stit_area .chart_date a, .stit_area .chart_date span,
+	.vote_list li .thum .play, .info .chart_info li .pick, .vote_area.realtime ul li.vs,
+	.captcha-wrap .btn-refresh:before, .agree_chk input.checkbox+label:before,
+	.agree_chk input.checkbox:checked+label:before, .btn-service a,
+	.btn-service-sub a, .vod_list li .tit .date em, .bx-controls-direction a,
+	.vote_list li .thum .pick {
+	background:
+		url(//image.genie.co.kr/imageg/web/promo_2019/mcountdown/ico.png)
+		no-repeat 0 0;
+}
+
+.chart_view li .play {
+	background-size: 10.417em;
+	background-position: -2.2em -5em;
+	width: 1.5em;
+	height: 1.5em;
+	top: 0.85em;
+}
+
+.chart_view li .rank .down {
+	padding-left: 0.852em
+}
+
+.chart_view li .rank .up {
+	padding-left: 0.852em
+}
+
+.chart_view li .rank em:after {
+	top: 0.48em;
+	width: 0.667em;
+	height: 0.556em
+}
+
+.chart_view li .rank .down:after {
+	background-position: -1.778em -9.296em;
+	background-size: 18.519em
+}
+
+.chart_view li .rank .up:after {
+	background-position: -3.037em -9.296em;
+	background-size: 18.519em
+}
+
+.chart_view li .rank em.static:after {
+	top: 0.7em;
+	width: 1em;
+}

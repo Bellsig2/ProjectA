@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+#article_con {
+	margin: 0 auto;
+	padding: 56px 0 0 0;
+}
+
+#setion_header {
+	padding: 26px 0px 4px;
+	text-align: center;
+	box-sizing: border-box;
+	min-height: 70px;
+}
+
+#setion_container {
+	max-width: none;
+	width: 800px;
+	min-height: 475px;
+	padding: 60px;
+	display: flex;
+	justify-content: space-between;
+	margin: 5px auto 20px auto;
+	box-sizing: border-box;
+	border: solid 1px #e6e6e6;
+}
+
+#left-con {
+	width: 320px;
+}
+
+
+.find_input_container{
+	display:none;
+}
+
+.input_account {
+	position:relative;
+	margin-top: 14px;
+}
+
+.input_account:first-child {
+	margin:0px;
+	position:relative;
+}
+
+
+.input_member {
+	width: 100%;
+	height: 48px;
+	line-height: 21px;
+	padding: 11px 35px 11px 16px;
+	color: #252525;
+	outline: 0;
+	box-sizing: border-box;
+	caret-color: #0096ff;
+	border: 0;
+	border-radius: 10px;
+	background-color: #fafafa;
+	font-size: 15px;
+}
+
+
+#login_keep {
+	margin-top: 20px;
+	padding-right: 30px;
+}
+
+#login_keep span {
+	font-size: 15px;
+	line-height: 22px;
+	color: #252525;
+}
+
+#login_con {
+	margin-top: 10px;
+}
+
+#login {
+	box-sizing: border-box;
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	padding: 0;
+	border: 0;
+	border-radius: 10px;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #0096ff;
+	display: flex;
+	flex: 1 0 50px;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	font-weight: 700;
+}
+
+
+#icons {
+	display: flex;
+	justify-content: center;
+	padding-top: 38px;
+}
+
+#icons a {
+	background-size: contain;
+	width: 48px;
+	height: 48px;
+	margin: 0 10px;
+}
+
+#icons #btn_kakao {
+	background-image: url("../image/kakaotalk.png");
+}
+
+#icons #btn_facebook {
+	background-image: url("../image/facebook.png");
+}
+
+#icons #btn_twitter {
+	background-image: url("../image/twitter.png");
+}
+
+#icons #btn_apple {
+	background-image: url("../image/apple.png");
+}
