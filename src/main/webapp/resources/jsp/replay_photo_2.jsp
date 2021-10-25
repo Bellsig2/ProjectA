@@ -5,13 +5,13 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<link href="./resources/css/replay_photo_1.css" rel="stylesheet">
+	<link href="../css/replay_photo_1.css" rel="stylesheet">
 	<title>Insert title here</title>
-	<c:import url="./WEB-INF/views/temp/boot_head.jsp"></c:import>
+	<c:import url="/WEB-INF/views/temp/boot_head.jsp"></c:import>
 	</head>
 	
 	<body>
-	<%@ include file = "./header.jsp" %>
+	<%@ include file = "header.jsp" %>
 		<ul id="menu">
 			<li>
 				<button class="vod" onclick="location.href='./replay_vod_1.jsp'">
@@ -60,7 +60,7 @@
 					</nav>
 				</div>
 				
-		<%@ include file = "./footer.jsp" %>
+		<%@ include file = "footer.jsp" %>
 					
 	</body>
 </html>

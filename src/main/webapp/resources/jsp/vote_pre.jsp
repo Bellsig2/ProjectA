@@ -4,12 +4,12 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<link href="./resources/css/vote_pre.css" rel="stylesheet">
+	<link href="../css/vote_pre.css" rel="stylesheet">
 	<title>Insert title here</title>
 	</head>
 	
 	<body>
-	<%@ include file = "./header.jsp" %>
+	<%@ include file = "header.jsp" %>
 		<ul id="menu">
 		<li>
 			<button class="pre" onclick="location.href='./vote_pre.jsp'">
@@ -306,7 +306,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94160633', '', '1');return false;" class="play">재생</a>
@@ -331,7 +331,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94227263', '', '1');return false;" class="play">재생</a>
@@ -356,7 +356,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94337053', '', '1');return false;" class="play">재생</a>
@@ -431,7 +431,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94276579', '', '1');return false;" class="play">재생</a>
@@ -506,7 +506,7 @@
 					
 				</li>
 				
-				<li>
+				<li class="excep">
 					<div class="thum">
 						
 						<a href="javascript:;" onclick="fnPlayerCall('94199820', '', '1');return false;" class="play">재생</a>
@@ -571,7 +571,7 @@
 			</div>
 		</section>
 			
-	<%@ include file = "./footer.jsp" %>
+	<%@ include file = "footer.jsp" %>
 
 	</body>
 </html>

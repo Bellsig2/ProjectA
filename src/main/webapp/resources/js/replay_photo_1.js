@@ -1,7 +1,7 @@
 /**
  * 
  */
-
+ 
 const bg = document.getElementById("bg");
 const popup = document.getElementById("photo-pop");
 const closeBtn = document.querySelector(".layer-close");
@@ -17,4 +17,3 @@ function onclose() {
 }
 
 closeBtn.addEventListener("click", onclose);
- 
