@@ -145,7 +145,7 @@ $("#id_check").click(function() {
 		},
 		success: function(result) {
 			console.log(result.trim());
-			if (result.trim() != $("#join_id").val()) {
+			if (result.trim().length==0) {
 				$("#id_rule")
 					.html(
 						"<span class='success'>사용 가능한 아이디 입니다.</span>");
