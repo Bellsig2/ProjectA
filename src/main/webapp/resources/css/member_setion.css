@@ -32,7 +32,7 @@
 }
 
 .check_icon {
-	background-image: "../images/login_icon.png"
+	background-image: "../image/login_icon.png"
 }
 
 .find_ment {
@@ -76,7 +76,7 @@
 }
 
 .lisk_icon {
-	background-image: url("../images/login_icon.png");
+	background-image: url("../image/login_icon.png");
 	background-position: -33.33333px -33.33333px;
 }
 .inline-block {

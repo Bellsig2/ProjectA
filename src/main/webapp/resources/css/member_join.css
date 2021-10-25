@@ -73,7 +73,7 @@
 }
 
 .reset_btn {
-	background-image: url("../images/login_icon.png");
+	background-image: url("../image/login_icon.png");
 	display: block;
 	z-index: 10;
 	background-position: -136px -3px;
