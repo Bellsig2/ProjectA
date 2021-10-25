@@ -4,12 +4,12 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<link href="./resources/css/vote_pre.css" rel="stylesheet">
+	<link href="../css/vote_pre.css" rel="stylesheet">
 	<title>Insert title here</title>
 	</head>
 	
 	<body>
-	<%@ include file = "./header.jsp" %>
+	<%@ include file = "header.jsp" %>
 		<ul id="menu">
 		<li>
 			<button class="pre" onclick="location.href='./vote_pre.jsp'">
@@ -571,7 +571,7 @@
 			</div>
 		</section>
 			
-	<%@ include file = "./footer.jsp" %>
+	<%@ include file = "footer.jsp" %>
 
 	</body>
 </html>

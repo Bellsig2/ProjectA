@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link href="./resources/css/footer.css" rel="stylesheet">
+		<link href="../css/footer.css" rel="stylesheet">
 		<title>Insert title here</title>
 	</head>
 	
@@ -14,12 +14,12 @@
 					<div class="logo">
 						<div class="genie">
 							<a href="https://www.geniemusic.co.kr/">
-								<img src="./resources/image/footer_logo.png">
+								<img src="../image/footer_logo.png">
 							</a>
 						</div>
 						<div class="fb">
 							<a href="https://www.facebook.com/genieplay">
-								<img src="./resources/image/fb_logo.png">
+								<img src="../image/fb_logo.png">
 							</a>
 						</div>
 					</div>
