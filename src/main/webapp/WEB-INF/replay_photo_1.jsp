@@ -62,9 +62,7 @@
 					<div id="slide-counter"><strong class="current-index">1</strong>/<em id="slideshowCnt">7</em></div>
 				</div>
 			</div>
-		
-	
-		
+
 				<div class=paging>
 					<nav aria-label="...">
 					  <ul class="pagination">
