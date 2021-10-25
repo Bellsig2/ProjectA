@@ -47,6 +47,7 @@ html {
 	line-height: 57px;
 	padding: 0px;
 	height: 100%;
+	margin-bottom: 0px
 }
 
 #member_list :first-child {

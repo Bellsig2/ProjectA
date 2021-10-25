@@ -9,13 +9,12 @@
 	letter-spacing: -0.03rem;
 }
 
-#service_list {
-	
-}
 
 #service_list .link_info {
 	padding: 0 20px;
 	position: relative;
+	text-decoration: none;
+	color:black
 }
 
 #service_list .link_info:first-child:before {

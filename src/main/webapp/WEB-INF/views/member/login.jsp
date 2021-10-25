@@ -56,7 +56,7 @@
 
 				</div>
 			</div>
-			<img alt="임시" src="../resources/images/add.jpg">
+			<img alt="임시" src="../resources/image/add.jpg">
 		</section>
 	</article>
 	<c:import url="../temp/member_footer.jsp"></c:import>
