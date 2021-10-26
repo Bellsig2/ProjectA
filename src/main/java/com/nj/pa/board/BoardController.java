@@ -33,10 +33,17 @@ public class BoardController {
 		return mv;
 	}
 
-	@GetMapping("vote")
-	public ModelAndView vote() {
+	@GetMapping("vote_pre")
+	public ModelAndView votePre() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/board/vote_pre");
+		return mv;
+	}
+	
+	@GetMapping("vote_live")
+	public ModelAndView voteLive() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/vote_live");
 		return mv;
 	}
 

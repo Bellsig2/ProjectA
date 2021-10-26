@@ -12,12 +12,12 @@
 	<%@ include file = "header.jsp" %>
 		<ul id="menu">
 		<li>
-			<button class="pre" onclick="location.href='./vote_pre.jsp'">
+			<button class="pre" onclick="location.href='./vote_pre'">
 			사전 온라인투표
 			</button>
 		</li>
 		<li>
-			<button class="live" onclick="location.href='./vote_live.jsp'">
+			<button class="live" onclick="location.href='./vote_live'">
 			실시간 1위 투표
 			</button>
 		</li>
