@@ -29,7 +29,7 @@ public class BoardController {
 	@GetMapping("chart")
 	public ModelAndView chart() {
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("/board/chart");
+		mv.setViewName("/board/NewFile1");
 		return mv;
 	}
 
@@ -60,7 +60,7 @@ public class BoardController {
 		mv.setViewName("/board/replay_photo_1");
 		return mv;
 	}
-
+	
 	@GetMapping("select")
 	public ModelAndView getSelect(BoardDTO boardDTO) {
 		ModelAndView mv = new ModelAndView();
