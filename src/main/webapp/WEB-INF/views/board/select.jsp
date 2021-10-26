@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:import url="../header.jsp"></c:import>
+	<c:import url="header.jsp"></c:import>
 	<div class="wrap">
 		<section class="board_section">
 			<div class="board_wrap">
@@ -46,7 +46,7 @@
 		</section>
 	</div>
 	<input id="param_num" value="${board.num}" type="hidden">
-	<c:import url="../footer.jsp"></c:import>
+	<c:import url="footer.jsp"></c:import>
 	<script type="text/javascript">
 		$("#del").click(function(){
 			location.href = "./del?num="+$("#param_num").val();
