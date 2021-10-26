@@ -4,8 +4,8 @@
 <html>
 <head>
 <title>projectAA</title>
-<link rel="stylesheet" href="../css/sytle.css">
-<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../resources/css/sytle.css">
+<link rel="stylesheet" href="../resources/css/footer.css">
 
 
 
