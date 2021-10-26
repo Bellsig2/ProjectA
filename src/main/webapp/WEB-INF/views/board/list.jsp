@@ -10,7 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:import url="../header.jsp"></c:import>
+	<c:import url="header.jsp"></c:import>
 	<div class="wrap">
 		<section class="board_section">
 			<div class="board_wrap">

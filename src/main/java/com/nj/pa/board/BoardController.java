@@ -15,8 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/board/**")
 public class BoardController {
 	@Autowired
-	private BoardService boardService; 
-	
+	private BoardService boardService;
+
 	@GetMapping("qna")
 	public ModelAndView getList() {
 		ModelAndView mv = new ModelAndView();
@@ -25,7 +25,42 @@ public class BoardController {
 		mv.setViewName("/board/list");
 		return mv;
 	}
-	
+
+	@GetMapping("chart")
+	public ModelAndView chart() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/chart");
+		return mv;
+	}
+
+	@GetMapping("vote")
+	public ModelAndView vote() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/vote_pre");
+		return mv;
+	}
+
+	@GetMapping("info")
+	public ModelAndView info() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/broadcast");
+		return mv;
+	}
+
+	@GetMapping("vod")
+	public ModelAndView vod() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/replay_vod_1");
+		return mv;
+	}
+
+	@GetMapping("photo")
+	public ModelAndView photo() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/replay_photo_1");
+		return mv;
+	}
+
 	@GetMapping("select")
 	public ModelAndView getSelect(BoardDTO boardDTO) {
 		ModelAndView mv = new ModelAndView();
@@ -34,27 +69,27 @@ public class BoardController {
 		mv.setViewName("/board/select");
 		return mv;
 	}
-	
+
 	@GetMapping("insert")
 	public ModelAndView setInsert() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/board/insert");
 		return mv;
 	}
-	
+
 	@PostMapping("insert")
 	public String setInsert(BoardDTO boardDTO) {
 		boardDTO.setWriter("ADMIN");
 		int insert = boardService.board_insert(boardDTO);
 		return "redirect:./qna";
 	}
-	
+
 	@GetMapping("del")
 	public String setDel(BoardDTO boardDTO) {
 		boardService.board_del(boardDTO);
 		return "redirect:./qna";
 	}
-	
+
 	@GetMapping("update")
 	public ModelAndView setUpdate(BoardDTO boardDTO) {
 		boardDTO = boardService.board_select(boardDTO);
@@ -63,6 +98,7 @@ public class BoardController {
 		mv.setViewName("/board/update");
 		return mv;
 	}
+
 	@PostMapping("update")
 	public String setUpdate(BoardDTO boardDTO, ServletRequest request) {
 		boardService.board_update(boardDTO);

@@ -18,7 +18,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:import url="../header.jsp"></c:import>
+	<c:import url="header.jsp"></c:import>
 	<div class="wrap">
 		<section class="board_section">
 		<form action="update" method="post">
@@ -43,7 +43,7 @@
 			</form>
 		</section>
 	</div>
-	<c:import url="../footer.jsp"></c:import>
+	<c:import url="footer.jsp"></c:import>
 </body>
 <script type="text/javascript">
 	$(document).ready(function() {
