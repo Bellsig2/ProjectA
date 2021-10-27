@@ -11,7 +11,7 @@
 
 </head>
 <body>
-	<div class="wrap">
+	<%-- <div class="wrap">
 		<section class="header">
 			<!-- mini gnb -->
 			<div class="gnb-area">
@@ -55,8 +55,9 @@
 					<li><a href="javascript:;" onclick="fn_menu_move('/notice')">공지사항</a></li>
 				</ul>
 			</div>
-		</section>
+		</section> --%>
 		
+		<c:import url="header.jsp"></c:import>
 		
 		
 		<!-- 메인부분 -->

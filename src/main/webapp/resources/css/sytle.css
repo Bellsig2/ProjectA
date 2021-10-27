@@ -313,16 +313,13 @@ body {
 	background-position: -398px -33px;
 }
 
-.header .menu li:nth-child(5) {
-	display: none
-}
 
-.header .menu li:nth-child(6) a {
+.header .menu li:nth-child(5) a {
 	background-position: -513px 0;
 	width: 96px
 }
 
-.header .menu li.on:nth-child(6) a {
+.header .menu li.on:nth-child(5) a {
 	background-position: -513px -33px;
 }
 
