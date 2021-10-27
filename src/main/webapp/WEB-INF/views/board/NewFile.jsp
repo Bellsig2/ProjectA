@@ -40,7 +40,7 @@
 			
 			<div class="contents">
 				<h1>
-					<a href="NewFile.jsp">M COUNTDOWN - WORLD NO.1 KPOP CHART SHOW</a>
+					<a href="${pageContext.request.contextPath}/board/main">M COUNTDOWN - WORLD NO.1 KPOP CHART SHOW</a>
 				</h1>
 				<ul class="menu">
 					<li><a href="javascript:;"
@@ -64,7 +64,7 @@
 		
 		
 		<section class="main_bnr" style="background: #cbd6ef">
-			<img src="../image/bnr01_1.jpg"
+			<img src="../resources/image/bnr01_1.jpg"
 				alt="M COUNTDOWN WORLD NO.1 KPOP CHART SHOW 매주 목요일 6시 생방송!"
 				style="visibility: visible;">
 		</section>

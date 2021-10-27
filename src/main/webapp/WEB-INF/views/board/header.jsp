@@ -26,7 +26,7 @@
 			<!--// mini gnb -->
 			<div class="contents">
 				<h1>
-					<a href="./header.jsp">M COUNTDOWN - WORLD NO.1 KPOP CHART SHOW</a>
+					<a href="${pageContext.request.contextPath}/board/main">M COUNTDOWN - WORLD NO.1 KPOP CHART SHOW</a>
 				</h1>
 				<ul class="menu">
 					<li><a href="./chart">엠카차트</a></li>
