@@ -7,8 +7,8 @@
 </c:when>
 
 <c:when test="${not empty member.id}">
-	<script type="text/javascript">
-		location.href="./join";
+	<script>
+		location.href = "../board/main"
 	</script>
 </c:when>
 </c:choose>

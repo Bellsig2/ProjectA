@@ -46,6 +46,13 @@ public class BoardController {
 		mv.setViewName("/board/vote_pre");
 		return mv;
 	}
+	
+	@GetMapping("voteLive")
+	public ModelAndView voteLive() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/vote_live");
+		return mv;
+	}
 
 	@GetMapping("info")
 	public ModelAndView info() {

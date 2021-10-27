@@ -46,8 +46,8 @@
 							<li>	<a href="https://www.genie.co.kr/detail/mediaInfo?xvnm=215947" onclick="fnPlayMvID(215947); return false;">		<div class="thum">			<img src="//image.genie.co.kr/Y/IMAGE/IMG_MUSICVIDEO/000/215/947/215947_4_320x240.JPG">			<em>04:37</em>		</div>		<div class="tit">			<strong>'최초 공개' 4色 예삐들 'AB6IX'의 'CHERRY' 무대</strong>			<span class="date">2021.09.30</span>		</div>	</a></li>
 							<li>	<a href="https://www.genie.co.kr/detail/mediaInfo?xvnm=215944" onclick="fnPlayMvID(215944); return false;">		<div class="thum">			<img src="//image.genie.co.kr/Y/IMAGE/IMG_MUSICVIDEO/000/215/944/215944_4_320x240.JPG">			<em>03:11</em>		</div>		<div class="tit">			<strong>'오메가엑스'의 폭발적 에너지! 'WHAT'S GOIN' ON' 무대</strong>			<span class="date">2021.09.30</span>		</div>	</a></li>
 						</ul>
-					</div>
-				</section>
+					
+				
 				
 				<div class=paging>
 					<nav aria-label="...">
@@ -60,7 +60,8 @@
 					  </ul>
 					</nav>
 				</div>
-				
+				</div>
+				</section>
 				<%@ include file = "footer.jsp" %>
 	</body>
 </html>

@@ -102,7 +102,6 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
 .header .menu li.on:nth-child(3) a{background-position:-283px -33px;}
 .header .menu li:nth-child(4) a{background-position:-398px 0; width:96px}
 .header .menu li.on:nth-child(4) a{background-position:-398px -33px;}
-.header .menu li:nth-child(5){display:none}
 
 .header .menu li:nth-child(6) a{background-position:-513px 0; width:96px}
 .header .menu li.on:nth-child(6) a{background-position:-513px -33px;}
@@ -459,5 +458,9 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
 
 .paging {
 	width:1030px;
-	margin: 20px 650px 50px 650px;
+	margin: 20px 10px;
+}
+
+.pagination {
+	justify-content: center;
 }

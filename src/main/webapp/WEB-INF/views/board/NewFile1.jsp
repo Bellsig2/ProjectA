@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -61,8 +62,8 @@
 				<div class="gnb">
 					<a href="javascript:;" onclick="goGenie(); return false;" title="지니홈 바로가기" class="home">지니홈 바로가기</a>
 					<ul>
-						<li class="NON-LOGIN"><a href="https://www.genie.co.kr/member/signUp" target="_blank" title="회원가입 새창열기">회원가입</a></li>
-						<li class="NON-LOGIN"><a href="javascript:;" onclick="loginPopup(); return false;" title="로그인">로그인</a></li>
+						<li class="NON-LOGIN"><a href="${pageContext.request.contextPath}/member/join" target="_blank" title="회원가입 새창열기">회원가입</a></li>
+						<li class="NON-LOGIN"><a href="${pageContext.request.contextPath}/member/login" onclick="loginPopup(); return false;" title="로그인">로그인</a></li>
 						<li class="LOGIN" style="display: none;"><a href="javascript:;" onclick="logoutpop('cooperate');return false;" title="로그아웃">로그아웃</a></li>
 					</ul>
 				</div>
@@ -551,17 +552,17 @@
 				executeApp('39', mvId, false, 'M');
 			}
 		</script>
-		<div id="footer_wrap">
+		<!-- <div id="footer_wrap">
 			<footer>
 				<div class="logo">
 					<div class="genie">
 						<a href="https://www.geniemusic.co.kr/">
-							<img src="./resources/images/footer_logo.png">
+							<img src="./resources/image/footer_logo.png">
 						</a>
 					</div>
 					<div class="fb">
 						<a href="https://www.facebook.com/genieplay">
-							<img src="./resources/images/fb_logo.png">
+							<img src="./resources/image/fb_logo.png">
 						</a>
 					</div>
 				</div>
@@ -577,6 +578,7 @@
 				<p class="copyright">COPYRIGHTⓒGENIE MUSIC CORP ALL RIGHTS RESERVED.</p>
 			</footer>
 
-		</div>
+		</div> -->
+		<c:import url="footer.jsp"></c:import>
 </body>
 </html>

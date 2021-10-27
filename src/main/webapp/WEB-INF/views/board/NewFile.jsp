@@ -65,7 +65,7 @@
 		
 		
 		<section class="main_bnr" style="background: #cbd6ef">
-			<img src="../resources/image/bnr01_1.jpg"
+			<img src="../resources/image/MCmain.jpg"
 				alt="M COUNTDOWN WORLD NO.1 KPOP CHART SHOW 매주 목요일 6시 생방송!"
 				style="visibility: visible;">
 		</section>
@@ -263,7 +263,7 @@
 	
 	
 	
-	<div id="footer_wrap">
+	<!-- <div id="footer_wrap">
 			<footer>
 					<div class="logo">
 						<div class="genie">
@@ -319,6 +319,7 @@
 						
 						<p class="copyright">COPYRIGHTⓒGENIE MUSIC CORP ALL RIGHTS RESERVED.</p>
 				</footer>
-			</div>
+			</div> -->
+			<c:import url="footer.jsp"></c:import>
 </body>
 </html>

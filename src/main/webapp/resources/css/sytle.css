@@ -324,7 +324,7 @@ body {
 }
 
 .main_bnr{width:100%; text-align: center}
-.main_bnr img{width:100%;} /* 이미지 크기 조절*/
+
 
 .content {
 	position: relative;
@@ -831,7 +831,6 @@ body {
 .wrap {
 	margin: 0 auto;
 	min-width: 1080px;
-	padding-bottom: 60px
 }
 
 .tit_area .more:after, .chart_view li .play, .chart_view li .rank .down:after,
