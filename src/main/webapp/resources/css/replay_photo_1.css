@@ -106,15 +106,7 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
 .header .menu li:nth-child(6) a{background-position:-513px 0; width:96px}
 .header .menu li.on:nth-child(6) a{background-position:-513px -33px;}
 
-@media screen and (max-width: 1071px) {
-  .header .contents{height:12.021em}
-  .header h1{width:11.413em; height:5.958em; background-position:left bottom; background-size:13.417em; top:3.971em}
-  .header .menu{top:10em}
-  .header .menu li{margin:0; width:14%; float:left;}
-  .header .menu li a{background:none; text-indent:0; font-size:0.958em; width:auto !important}
-  .header .menu li.on a{color:#0000ff; font-weight: 700;}
-  .header .menu li:nth-child(1), .header .menu li:nth-child(3), .header .menu li:nth-child(6){width:19%}
-  .header .menu li:nth-child(5){display:inline-block;}
+
 }
 
 
