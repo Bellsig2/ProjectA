@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,14 +26,13 @@
 			<!--// mini gnb -->
 			<div class="contents">
 				<h1>
-					<a href="./header.jsp">M COUNTDOWN - WORLD NO.1 KPOP CHART SHOW</a>
+					<a href="${pageContext.request.contextPath}/board/main">M COUNTDOWN - WORLD NO.1 KPOP CHART SHOW</a>
 				</h1>
 				<ul class="menu">
 					<li><a href="./chart">엠카차트</a></li>
 					<li><a href="./vote">투표</a></li>
 					<li><a href="./info">방송정보</a></li>
-					<li style="display: inline-block;"><a href="./vod">영상</a></li>
-					<li style="display: inline-block;"><a href="./photo">포토</a></li>
+					<li><a href="./vod">영상</a></li>
 					<li><a href="./qna">공지사항</a></li>
 				</ul>
 			</div>

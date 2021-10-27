@@ -25,6 +25,13 @@ public class BoardController {
 		mv.setViewName("/board/list");
 		return mv;
 	}
+	
+	@GetMapping("main")
+	public ModelAndView chart_main() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/board/NewFile");
+		return mv;
+	}
 
 	@GetMapping("chart")
 	public ModelAndView chart() {
