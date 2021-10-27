@@ -3,6 +3,7 @@ package com.nj.pa.member;
 import java.net.http.HttpRequest;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,6 +24,20 @@ public class MemberController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("member/login");
 		return mv;
+	}
+	
+	@PostMapping("login")
+	public String login(MemberDTO memberDTO, HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		session.setAttribute("member", memberDTO);
+		return "redirect:../board/main";
+	}
+	
+	@GetMapping("logout")
+	public String logout(MemberDTO memberDTO, HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		session.invalidate();
+		return "redirect:../board/main";
 	}
 	
 	@PostMapping("check_login") 
