@@ -22,7 +22,8 @@
 	</ul>
 
 
-
+	<div id="bg" style="display: none; position: absolute; top: 0px; left: 0px; right: 0px; z-index: 99; height: 2659px; background-color: rgb(0, 0, 0); opacity: 0.75;"></div>
+	
 	<section class="replay">
 		<div class="contents">
 			<ul class="vod_list photo">
@@ -194,7 +195,7 @@
 			</ul>
 
 
-			<div id="bg" style="display: none; position: absolute; top: 0px; left: 0px; right: 0px; z-index: 99; height: 2659px; background-color: rgb(0, 0, 0); opacity: 0.75;"></div>
+			
 			<div id="photo-pop" class="popup photo_pop" style="display: none; position: fixed; left: 50%; top: 50%; z-index: 100; margin-top: -362.5px; margin-left: -278.5px;">
 				<div class="popup-header">
 					<h3>포토 보기</h3>

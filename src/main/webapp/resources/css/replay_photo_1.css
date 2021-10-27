@@ -442,7 +442,7 @@ body { width: 100%; min-width: 1160px; overflow: hidden; }
   .popup .popup-content .line2{margin-top:0}
 }
 
-.modal_bg {
+.bg {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
