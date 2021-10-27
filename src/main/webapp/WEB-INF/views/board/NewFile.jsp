@@ -80,7 +80,7 @@
 			<div class="contents">
 				<div class="tit_area">
 					<h2>라인업</h2>
-					<span class="date">2021.09.30</span> <a href="javascript:;"
+					<span class="date">2021.09.30</span> <a href="${pageContext.request.contextPath}/board/vote;"
 						class="more" onclick="fn_menu_move('/notice')">more</a>
 				</div>
 				<p class="artist_lineup">노라조, NIK, 도한세, 스카이리, 싸이퍼(Ciiphter),
@@ -99,7 +99,7 @@
 			<div class="contents">
 				<div class="tit_area board">
 					<h2>HOT PERFORMANCE</h2>
-					<a href="javascript:;"
+					<a href="${pageContext.request.contextPath}/board/vod;"
 						onclick="fn_menu_move('/replay/vod?pipFlag=C')" class="more">more</a>
 				</div>
 
@@ -170,7 +170,7 @@
 			<div class="contents">
 				<div class="tit_area">
 					<h2>엠카운트다운 차트</h2>
-					<a href="javascript:;" onclick="fn_menu_move('/chart/info')"
+					<a href="${pageContext.request.contextPath}/board/chart;" onclick="fn_menu_move('/chart/info')"
 						class="more">more</a> <span class="date">2021.09.20 ~
 						2021.09.26</span>
 				</div>

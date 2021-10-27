@@ -15,7 +15,7 @@
 		<li>
 			<button class="vod" onclick="location.href='${pageContext.request.contextPath}/board/vod'">영상 다시보기</button>
 		</li>
-		<li>
+		<li>z
 			<button class="photo" onclick="location.href='${pageContext.request.contextPath}/board/photo'">포토 다시보기</button>
 		</li>
 		<div class="click"></div>
