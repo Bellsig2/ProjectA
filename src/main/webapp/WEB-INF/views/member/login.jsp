@@ -17,7 +17,7 @@
 		<section id="setion_container">
 			<div id="left-con">
 				<div id="account">
-					<form action="login" method="post">
+					<form action="login" method="post" id="frm">
 						<div id="input_account_col">
 							<div class="input_account">
 								<input type="text" placeholder="아이디" class="input_member" name="id" autocomplete="none" id="login_id">
@@ -64,7 +64,17 @@
 
 	<script type="text/javascript">
 		$("#login").click(
-				function() {					
+				function() {
+					if ($("#login_id").val().length == 0) {
+						$("#login_id").focus();
+						$("#login_check").html("<span class='risk'>아이디를 입력해주세요</span>");
+						return 0;
+					} else if ($("#login_pw").val().length == 0) {
+						$("#login_pw").focus();
+						$("#login_check").html(
+								"<span class='risk'>비밀번호를 입력해주세요</span>")
+						return 0;
+					}
 					$.ajax({
 						type : "post",
 						url : "./check_login",
@@ -73,16 +83,11 @@
 							pw : $("#login_pw").val()
 						},
 						success : function(result) {
-							if ($("#login_id").val().length == 0) {
-								$("#login_id").focus();
-								$("#login_check").html("<span class='risk'>아이디를 입력해주세요</span>");
-							}
-							else if ($("#login_pw").val().length == 0) {
-								$("#login_pw").focus();
-								$("#login_check").html("<span class='risk'>비밀번호를 입력해주세요</span>")
+							if(result.trim()==0) {
+								$("#login_check").html("<span class='risk'>없는 계정 입니다.</span>")
 							}
 							else {
-								$("#login_check").html(result)
+								$("#frm").submit()
 							}
 						}
 					})

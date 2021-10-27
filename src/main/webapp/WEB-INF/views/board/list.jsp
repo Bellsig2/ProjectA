@@ -51,7 +51,7 @@
 			</div>
 		</section>
 	</div>
-	<c:import url="../footer.jsp"></c:import>
+	<c:import url="footer.jsp"></c:import>
 	<script type="text/javascript">
 		
 	</script>
