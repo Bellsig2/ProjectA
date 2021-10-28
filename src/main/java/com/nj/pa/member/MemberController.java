@@ -88,7 +88,6 @@ public class MemberController {
 		MemberDTO memberDTO = new MemberDTO();
 		memberDTO.setId(id);
 		memberDTO = memberService.check_id(memberDTO);
-
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("common/check_log");
 		modelAndView.addObject("member", memberDTO);

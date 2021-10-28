@@ -6,6 +6,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.nj.pa.comment.CommentDTO;
+
 @Repository
 public class BoardDAO {
 	@Autowired
@@ -30,5 +32,17 @@ public class BoardDAO {
 	
 	public int board_update(BoardDTO boardDTO) {
 		return session.update(NAMESPACE+"board_update", boardDTO);
+	}
+	
+	public List<CommentDTO> comment_list() {
+		return session.selectList(NAMESPACE+"comment_list");
+	}
+	
+	public int comment_insert(CommentDTO commentDTO) {
+		return session.insert(NAMESPACE+"comment_insert", commentDTO);
+	}
+	
+	public int comment_del(CommentDTO commentDTO) {
+		return session.delete(NAMESPACE+"comment_del", commentDTO);
 	}
 }

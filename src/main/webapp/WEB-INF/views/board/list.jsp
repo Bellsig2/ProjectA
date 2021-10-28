@@ -45,7 +45,9 @@
 				</table>
 				<div class="btn_con">
 					<div class="left">
-						<a href='<c:url value="/board/insert"/>'>글쓰기</a>
+						<c:if test="${member.id == 'admin' and not empty member}">
+							<a href='<c:url value="/board/insert"/>'>글쓰기</a>
+						</c:if>
 					</div>
 				</div>
 			</div>

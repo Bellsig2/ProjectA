@@ -4,6 +4,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.nj.pa.comment.CommentDTO;
+
 @Repository
 public class MemberDAO {
 
@@ -42,4 +44,6 @@ public class MemberDAO {
 	public MemberDTO find_phone(MemberDTO memberDTO) {
 		return session.selectOne(NAMESAPCE+ "find_phone", memberDTO);
 	}
+	
+	
 }

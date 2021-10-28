@@ -4,7 +4,7 @@
 
 <header class="header">
 	<div class="header_con">
-		<img alt="" src="../resources/image/logo.png">
+		<a href="${pageContext.request.contextPath}/board/main"><img alt="" src="../resources/image/logo.png"></a>
 		<ul id="member_list">
 			<li><a href="${pageContext.request.contextPath}/member/join">회원가입</a></li>
 			<li><a href="${pageContext.request.contextPath}/member/findId">아이디 찾기</a></li>

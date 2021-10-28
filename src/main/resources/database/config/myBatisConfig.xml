@@ -7,5 +7,6 @@
   	<typeAliases>
   		<typeAlias type="com.nj.pa.member.MemberDTO" alias="MemberDTO"/>
   		<typeAlias type="com.nj.pa.board.BoardDTO" alias="BoardDTO"/>
+  		<typeAlias type="com.nj.pa.comment.CommentDTO" alias="CommentDTO"/>
   	</typeAliases>
   </configuration>

@@ -18,14 +18,14 @@
 				<form action="find_account">
 					<div id="label_con">
 						<div class="label-radio">
-						<c:if test="${member eq '비밀번호 찾기'}">
-							<label class="find_check_con"> <input type="radio" checked="checked" class="find_check" name=""> <c:if test="${member eq '비밀번호 찾기'}">
-									<span class="find_ment">등록된 아이디로 찾기</span>
-								</c:if>
+							<c:if test="${member eq '비밀번호 찾기'}">
+								<label class="find_check_con"> <input type="radio" checked="checked" class="find_check" name=""> <c:if test="${member eq '비밀번호 찾기'}">
+										<span class="find_ment">등록된 아이디로 찾기</span>
+									</c:if>
 
-							</label>
-		
-							<div class="find_input_container" id="find_with_phone_con">
+								</label>
+
+								<div class="find_input_container" id="find_with_phone_con">
 									<div class="input_account">
 										<input type="text" placeholder="아이디" class="input_member" name="id" id="find_pw_with_id">
 										<div class="util_tf">
@@ -36,7 +36,7 @@
 									</div>
 									<ul class="join_rule" id="id_rule">
 									</ul>
-							</div>
+								</div>
 							</c:if>
 						</div>
 						<div class="label-radio">
@@ -85,20 +85,18 @@
 	</article>
 	<c:import url="../temp/member_footer.jsp"></c:import>
 	<script type="text/javascript">
-	
 		let check = function() {
 			$('.find_check').each(function() {
 				if ($(this).prop("checked") == true) {
 					$('.find_check').parent().next().css("display", "none");
 					$(this).parent().next().css("display", "block");
 					$('input[type="text"]').val("")
-					
+
 				}
 
 			})
 		}
-		
-		
+
 		$('.find_check').click(function() {
 			$('.find_check').prop('checked', false)
 			$(this).prop('checked', true)
@@ -119,10 +117,10 @@
 						}
 					})
 		}
-		
+
 		// 계정 확인
 		$("#submit_btn").on({
-			click : function(){
+			click : function() {
 				$.ajax({
 					type : "POST",
 					url : "./find_account",
@@ -132,10 +130,10 @@
 						phone : $("#find_with_phone").val(),
 						account : $("#setion_header_pn").text(),
 					},
-					success: function(result){
+					success : function(result) {
 						alert(result.trim());
 						location.href = "login";
-						
+
 					}
 				})
 			}

@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.nj.pa.comment.CommentDTO;
+
 @Controller
 @RequestMapping("/board/**")
 public class BoardController {
@@ -25,7 +27,7 @@ public class BoardController {
 		mv.setViewName("/board/list");
 		return mv;
 	}
-	
+
 	@GetMapping("main")
 	public ModelAndView chart_main() {
 		ModelAndView mv = new ModelAndView();
@@ -43,10 +45,12 @@ public class BoardController {
 	@GetMapping("vote")
 	public ModelAndView vote() {
 		ModelAndView mv = new ModelAndView();
+		List<CommentDTO> comment = boardService.comment_list();
 		mv.setViewName("/board/vote_pre");
+		mv.addObject("comment", comment);
 		return mv;
 	}
-	
+
 	@GetMapping("voteLive")
 	public ModelAndView voteLive() {
 		ModelAndView mv = new ModelAndView();
@@ -74,7 +78,7 @@ public class BoardController {
 		mv.setViewName("/board/replay_photo_1");
 		return mv;
 	}
-	
+
 	@GetMapping("select")
 	public ModelAndView getSelect(BoardDTO boardDTO) {
 		ModelAndView mv = new ModelAndView();
@@ -117,6 +121,25 @@ public class BoardController {
 	public String setUpdate(BoardDTO boardDTO, ServletRequest request) {
 		boardService.board_update(boardDTO);
 		return "redirect:./qna";
+	}
+
+	@PostMapping("comment_insert")
+	public ModelAndView comment_insert(CommentDTO commentDTO) {
+		ModelAndView mv = new ModelAndView();
+		int result = boardService.comment_insert(commentDTO);
+		mv.addObject("result", result);
+		mv.setViewName("common/comment");
+		return mv;
+	}
+
+	@PostMapping("comment_del")
+	public ModelAndView comment_del(CommentDTO commentDTO) {
+		System.out.println(commentDTO.getComment_num());
+		ModelAndView mv = new ModelAndView();
+		int result = boardService.comment_del(commentDTO);
+		mv.setViewName("common/comment");
+		mv.addObject("result", result);
+		return mv;
 	}
 
 }

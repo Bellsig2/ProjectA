@@ -16,14 +16,16 @@
 				<div class="gnb">
 					<a href="https://www.genie.co.kr/" title="지니홈 바로가기" class="home">지니홈 바로가기</a>
 					<ul>
-						<li class="NON-LOGIN"><a href="${pageContext.request.contextPath}/member/join" target="_blank" title="회원가입 새창열기">회원가입</a></li>
+						<c:if test="${empty member}">
+							<li class="NON-LOGIN"><a href="${pageContext.request.contextPath}/member/join" target="_blank" title="회원가입 새창열기">회원가입</a></li>
+						</c:if>
 						<c:choose>
-						<c:when test="${empty member}">
-							<li class="NON-LOGIN"><a href="${pageContext.request.contextPath}/member/login" title="로그인">로그인</a></li>
-						</c:when>
-						<c:when test="${not empty member}">
-							<li class="LOGIN"><a href="${pageContext.request.contextPath}/member/logout" title="로그아웃">로그아웃</a></li>
-						</c:when>
+							<c:when test="${empty member}">
+								<li class="NON-LOGIN"><a href="${pageContext.request.contextPath}/member/login" title="로그인">로그인</a></li>
+							</c:when>
+							<c:when test="${not empty member}">
+								<li class="LOGIN"><a href="${pageContext.request.contextPath}/member/logout" title="로그아웃">로그아웃</a></li>
+							</c:when>
 						</c:choose>
 					</ul>
 				</div>

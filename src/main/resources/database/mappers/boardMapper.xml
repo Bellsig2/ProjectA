@@ -34,4 +34,20 @@
 		WHERE
 		NUM = #{num}
 	</update>
+	
+	<select id="comment_list" resultType="CommentDTO">
+		SELECT * FROM MUSIC_COMMENT
+	</select>
+	
+	<insert id="comment_insert" parameterType="CommentDTO">
+		INSERT INTO MUSIC_COMMENT VALUES (
+			COMMENT_NUM_SEQ.NEXTVAL,
+			#{id},
+			#{comment_txt},
+			SYSDATE
+		)
+	</insert>
+	<delete id="comment_del" parameterType="CommentDTO">
+		DELETE FROM MUSIC_COMMENT WHERE COMMENT_NUM = #{comment_num}
+	</delete>
 </mapper>

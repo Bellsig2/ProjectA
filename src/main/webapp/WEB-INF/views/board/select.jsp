@@ -28,18 +28,18 @@
 						<dd>${board.write_date}</dd>
 					</dl>
 				</div>
-				<div class="board_con">
-					${board.write_con}
-				</div>
-			
+				<div class="board_con">${board.write_con}</div>
+
 				<div class="btn_con">
 					<div class="left">
 						<a href="./qna">목록</a>
 					</div>
-					
+
 					<div class="right">
-						<button class="crud_btn" id="del">삭제</button>
-						<button class="crud_btb" id="update">수정</button>
+						<c:if test="${member.id == 'admin' and not empty member}">
+							<button class="crud_btn" id="del">삭제</button>
+							<button class="crud_btb" id="update">수정</button>
+						</c:if>
 					</div>
 				</div>
 			</div>
@@ -48,11 +48,11 @@
 	<input id="param_num" value="${board.num}" type="hidden">
 	<c:import url="footer.jsp"></c:import>
 	<script type="text/javascript">
-		$("#del").click(function(){
-			location.href = "./del?num="+$("#param_num").val();
+		$("#del").click(function() {
+			location.href = "./del?num=" + $("#param_num").val();
 		})
-		$("#update").click(function(){
-			location.href = "./update?num="+$("#param_num").val();
+		$("#update").click(function() {
+			location.href = "./update?num=" + $("#param_num").val();
 		})
 	</script>
 </body>
