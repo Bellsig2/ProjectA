@@ -119,6 +119,8 @@
 						}
 					})
 		}
+		
+		// 계정 확인
 		$("#submit_btn").on({
 			click : function(){
 				$.ajax({
@@ -131,7 +133,9 @@
 						account : $("#setion_header_pn").text(),
 					},
 					success: function(result){
-						console.log(result)
+						alert(result.trim());
+						location.href = "login";
+						
 					}
 				})
 			}

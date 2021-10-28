@@ -125,15 +125,15 @@ public class MemberController {
 		memberDTO.setId(request.getParameter("id"));
 		memberDTO.setEmail(request.getParameter("email"));
 		
-		System.out.println(memberDTO.getEmail());
 		
 		if(request.getParameter("account").equals("비밀번호 찾기")) {
-			if(memberDTO.getId()!=null) {
+			if(memberDTO.getId().length()!=0) {
 				memberDTO = memberService.find_id(memberDTO);
+				System.out.println(memberDTO.getId());
 			}
-			else if (memberDTO.getEmail()!=null) {
+			else if (memberDTO.getEmail().length()!=0) {
 				memberDTO = memberService.find_email(memberDTO);
-				
+				System.out.println(memberDTO.getEmail());
 			}
 		}
 		else {
