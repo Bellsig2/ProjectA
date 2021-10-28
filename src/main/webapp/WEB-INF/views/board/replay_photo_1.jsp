@@ -11,6 +11,9 @@
 
 <body>
 	<%@ include file="header.jsp"%>
+	
+	<div id="bg" style="display: none; position: absolute; top: 0px; left: 0px; right: 0px; z-index: 99; height: 2659px; background-color: rgb(0, 0, 0); opacity: 0.75;"></div>
+	
 	<ul id="menu">
 		<li>
 			<button class="vod" onclick="location.href='${pageContext.request.contextPath}/board/vod'">영상 다시보기</button>
@@ -18,8 +21,8 @@
 		<li>
 			<button class="photo" onclick="location.href='${pageContext.request.contextPath}/board/photo'">포토 다시보기</button>
 		</li>
+		<div class="click"></div>
 	</ul>
-
 
 	<section class="replay">
 		<div class="contents">
@@ -189,8 +192,11 @@
 							</span>
 						</div>
 					</a></li>
-			</ul>
-			<div id="bg" style="display: none; position: absolute; top: 0px; left: 0px; right: 0px; z-index: 99; height: 2659px; background-color: rgb(0, 0, 0); opacity: 0.75;"></div>
+				</ul>
+			
+			</div>
+			</section>
+			
 			<div class="paging">
 				<nav aria-label="...">
 					<ul class="pagination">
@@ -202,11 +208,9 @@
 					</ul>
 				</nav>
 			</div>
-		</div>
-	</section>
 
 	<c:import url="footer.jsp"></c:import>
 
-	<!-- <script type="text/javascript" src="../resources/js/replay_photo_1.js"></script> -->
+	<script type="text/javascript" src="../resources/js/replay_photo_1.js"></script>
 </body>
 </html>
