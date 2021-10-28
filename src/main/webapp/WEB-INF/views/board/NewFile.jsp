@@ -80,7 +80,7 @@
 			<div class="contents">
 				<div class="tit_area">
 					<h2>라인업</h2>
-					<span class="date">2021.09.30</span> <a href="${pageContext.request.contextPath}/board/vote;"
+					<span class="date">2021.09.30</span> <a href="${pageContext.request.contextPath}/board/qna;"
 						class="more" onclick="fn_menu_move('/notice')">more</a>
 				</div>
 				<p class="artist_lineup">노라조, NIK, 도한세, 스카이리, 싸이퍼(Ciiphter),
