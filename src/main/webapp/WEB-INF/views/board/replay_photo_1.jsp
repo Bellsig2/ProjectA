@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <link href="../resources/css/replay_photo_1.css" rel="stylesheet">
 <title>Insert title here</title>
-<c:import url="/WEB-INF/views/temp/boot_head.jsp"></c:import>
+<c:import url="../temp/boot_head.jsp"></c:import>
 </head>
 
 <body>
@@ -15,15 +15,12 @@
 		<li>
 			<button class="vod" onclick="location.href='${pageContext.request.contextPath}/board/vod'">영상 다시보기</button>
 		</li>
-		<li>z
+		<li>
 			<button class="photo" onclick="location.href='${pageContext.request.contextPath}/board/photo'">포토 다시보기</button>
 		</li>
-		<div class="click"></div>
 	</ul>
 
 
-	<div id="bg" style="display: none; position: absolute; top: 0px; left: 0px; right: 0px; z-index: 99; height: 2659px; background-color: rgb(0, 0, 0); opacity: 0.75;"></div>
-	
 	<section class="replay">
 		<div class="contents">
 			<ul class="vod_list photo">
@@ -193,72 +190,8 @@
 						</div>
 					</a></li>
 			</ul>
-
-
-			
-			<div id="photo-pop" class="popup photo_pop" style="display: none; position: fixed; left: 50%; top: 50%; z-index: 100; margin-top: -362.5px; margin-left: -278.5px;">
-				<div class="popup-header">
-					<h3>포토 보기</h3>
-					<button class="layer-close" title="닫기">닫기</button>
-				</div>
-				<div class="container">
-					<div class="bx-wrapper" style="max-width: 100%;">
-						<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 477px;">
-							<ul id="slideshow" class="slider_pop" style="width: auto; position: relative;">
-								<li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 50; display: block;">
-									<div>
-										<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_1.jpg">
-									</div>
-								</li>
-								<li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">
-									<div>
-										<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_2.jpg">
-									</div>
-								</li>
-								<li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">
-									<div>
-										<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_3.jpg">
-									</div>
-								</li>
-								<li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">
-									<div>
-										<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_4.jpg">
-									</div>
-								</li>
-								<li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">
-									<div>
-										<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_5.jpg">
-									</div>
-								</li>
-								<li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">
-									<div>
-										<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_6.jpg">
-									</div>
-								</li>
-								<li style="float: none; list-style: none; position: absolute; width: 477px; z-index: 0; display: none;">
-									<div>
-										<img src="https://image.genie.co.kr/Y/IMAGE/MCOUNTDOWN/PHOTO//2021/10/1630/071743_7.jpg">
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="bx-controls bx-has-controls-direction">
-							<div class="bx-controls-direction">
-								<a class="bx-prev" href="">Prev</a>
-								<a class="bx-next" href="">Next</a>
-							</div>
-						</div>
-					</div>
-					<div>
-						<span id="slideshowTitle">[엠카 727회] Ending_01</span>
-					</div>
-					<div id="slide-counter">
-						<strong class="current-index">1</strong>/<em id="slideshowCnt">7</em>
-					</div>
-				</div>
-			</div>
-
-			<div class=paging>
+			<div id="bg" style="display: none; position: absolute; top: 0px; left: 0px; right: 0px; z-index: 99; height: 2659px; background-color: rgb(0, 0, 0); opacity: 0.75;"></div>
+			<div class="paging">
 				<nav aria-label="...">
 					<ul class="pagination">
 						<li class="page-item disabled"><a class="page-link">《</a></li>
@@ -272,8 +205,8 @@
 		</div>
 	</section>
 
-	<%@ include file="footer.jsp"%>
+	<c:import url="footer.jsp"></c:import>
 
-	<script type="text/javascript" src="../resources/js/replay_photo_1.js"></script>
+	<!-- <script type="text/javascript" src="../resources/js/replay_photo_1.js"></script> -->
 </body>
 </html>

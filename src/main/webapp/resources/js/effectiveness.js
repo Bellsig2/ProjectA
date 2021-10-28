@@ -115,8 +115,7 @@ let join_check = function(){
 	if(overlap_id && overlap_pw && same_pw && overlap_email && overlap_phone) {
 		$("#join_btn").prop("disabled", false);
 		$("#join_btn").removeClass("disabled");
-	}
-	else {
+	}	else {
 		$("#join_btn").prop("disabled", true);
 		$("#join_btn").addClass("disabled");
 	}
