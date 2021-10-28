@@ -19,14 +19,15 @@ header, footer, section, article, menu, nav, aside {
 	display: block;
 }
 
-html {
-	font-size: 20px;
+html  {
+	font-size: 20px !important;
 	letter-spacing: -.035em;
 	-webkit-overflow-scrolling: touch;
 	overflow-y: scroll;
 }
 
 html, body {
+	font-size: 20px !important;
 	width: 100%;
 	-webkit-text-size-adjust: none;
 	font-family: "Spoqa Han Sans";

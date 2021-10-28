@@ -47,7 +47,7 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#summernote").summernote({
-			height:300
+			height:300,
 		});
 	})
 	

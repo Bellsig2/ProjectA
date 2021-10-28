@@ -109,6 +109,8 @@ let warnig_email_msg = function(check) {
 	}
 }
 
+
+// 유효성 최종 체크
 let join_check = function(){
 	if(overlap_id && overlap_pw && same_pw && overlap_email && overlap_phone) {
 		$("#join_btn").prop("disabled", false);
