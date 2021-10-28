@@ -85,14 +85,20 @@
 	</article>
 	<c:import url="../temp/member_footer.jsp"></c:import>
 	<script type="text/javascript">
+	
 		let check = function() {
 			$('.find_check').each(function() {
 				if ($(this).prop("checked") == true) {
 					$('.find_check').parent().next().css("display", "none");
 					$(this).parent().next().css("display", "block");
+					$('input[type="text"]').val("")
+					
 				}
+
 			})
 		}
+		
+		
 		$('.find_check').click(function() {
 			$('.find_check').prop('checked', false)
 			$(this).prop('checked', true)
