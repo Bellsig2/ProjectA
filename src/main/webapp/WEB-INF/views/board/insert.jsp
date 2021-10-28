@@ -15,7 +15,7 @@
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>KPOP Music, Music Video & Korean POP Chart | M COUNTDOWN</title>
 </head>
 <body>
 	<c:import url="header.jsp"></c:import>

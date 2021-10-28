@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-<title>projectAA</title>
+<title>KPOP Music, Music Video & Korean POP Chart | M COUNTDOWN</title>
 <link rel="stylesheet" href="../resources/css/sytle.css">
 <link rel="stylesheet" href="../resources/css/footer.css">
 

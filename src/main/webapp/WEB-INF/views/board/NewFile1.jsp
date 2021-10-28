@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>KPOP Music, Music Video & Korean POP Chart | M COUNTDOWN</title>
 <link rel="stylesheet" href="../resources/css/sytle.css">
 <link rel="stylesheet" href="../resources/css/footer.css">
 </head>

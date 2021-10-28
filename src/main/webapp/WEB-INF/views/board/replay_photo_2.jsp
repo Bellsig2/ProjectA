@@ -6,7 +6,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<link href="../css/replay_photo_1.css" rel="stylesheet">
-	<title>Insert title here</title>
+	<title>KPOP Music, Music Video & Korean POP Chart | M COUNTDOWN</title>
 	<c:import url="/WEB-INF/views/temp/boot_head.jsp"></c:import>
 	</head>
 	
