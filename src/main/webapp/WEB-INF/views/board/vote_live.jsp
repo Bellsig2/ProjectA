@@ -3,12 +3,12 @@
 
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
 <meta charset="UTF-8">
 <link href="../resources/css/vote_live.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
-
 <body>
 	<%@ include file="header.jsp"%>
 	<ul id="menu">

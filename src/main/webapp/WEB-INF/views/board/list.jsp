@@ -7,7 +7,7 @@
 <!-- Jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>KPOP Music, Music Video & Korean POP Chart | M COUNTDOWN</title>
 </head>
 <body>
 	<c:import url="header.jsp"></c:import>

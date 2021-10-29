@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
 <meta charset="UTF-8">
 <link href="../resources/css/vote_pre.css" rel="stylesheet">
@@ -11,8 +12,8 @@
 </head>
 
 <body>
-	<%@ include file="./header.jsp"%>
-	<ul id="menu">
+	<%@ include file = "./header.jsp" %>
+		<ul id="menu">
 		<li>
 			<button class="pre" onclick="location.href='${pageContext.request.contextPath}/board/vote'">사전 온라인투표</button>
 		</li>

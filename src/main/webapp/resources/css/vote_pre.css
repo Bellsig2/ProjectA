@@ -249,6 +249,7 @@ body {
 }
 
 .title1 {
+<<<<<<< HEAD
 	font-size: 27px;
 }
 
@@ -455,6 +456,45 @@ body {
 	width: 700px;
 }
 
+=======
+	font-size:27px;
+}
+
+.title2{
+	font-size:65px;
+}
+
+.title3{
+	padding-top:20px;
+}
+
+.vote_area{width:1030px; margin:0 auto;}
+.vote_list{width:100%; }
+.vote_list:after{display:block; clear:both; content:""; }
+.vote_list li .thum .mask {display:block;position:absolute;top:0;left:0;width:320px;height:320px;border:1px solid #000;opacity:0.1;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)';filter:alpha(opacity=10)}
+.vote_list li{width:320px; float:left; margin:70px 0px 0 35px;position:relative;}
+.vote_list li:nth-child(3n+1){margin-left:0;}
+.vote_list li .thum{width:100%; height:320px; text-align:center; position:relative; }
+.vote_list li .thum a{display:block; }
+.vote_list li .thum img{width:100%; height:100%; }
+.vote_list li .thum .pick{position:absolute; left:-9px; top:-5px; width:78px; height:29px; background-position:-268px 0; text-indent:-9999em}
+.vote_list li .thum .play{position:absolute; right:12px; bottom:12px; width:55px; height:55px; text-indent:-9999em; background-position:-201px 0; z-index:1}
+.vote_list li .rank{position:absolute; left:0; top:350px; z-index:2; color:#5a96ff; font-size:20px; text-align:center; font-weight:700; display:block; width:70px}
+.vote_list li .rank strong{font-family: "Teko-Bold"; font-size:54px; color:#969699; display:block; font-style:italic; line-height:40px; padding-top:0}
+.vote_list li strong{padding-top:20px; display:block;}
+.vote_list li strong a{color:#111111; padding-left:86px; position:relative; display:block; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; font-size:26px; text-align:left}
+.realtime .vote_list li strong a, .realtime .vote_list li .artist a{padding-left:5px}
+.vote_list li .artist a{padding-left:86px;color:#525252;font-size:20px; height:30px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; display:block; color:#525252; text-align:left}
+.vote_list li .go_vote{width:100%; height:60px; line-height:60px; color:#ffffff;font-size:22px; display:block; background:#a4d23f; text-align:center; border-radius:0.5em; margin-top:40px}
+.vote_list li .go_vote.end{background:#ffffff; color:#969699; border:1px solid #c8c8ca; line-height:58px;}
+
+.vote_area.realtime{position:relative}
+.vote_area.realtime ul{width:100%; text-align:center;}
+.vote_area.realtime ul li{display:inline-block; float: inherit;}
+.vote_area.realtime ul li.vs{position:absolute; left:460px; top:180px; margin:0; width:112px; height:112px; background-position:-357px 0; text-indent:-9999em;z-index:1}
+.info.realtime .contents{width:700px;}
+F
+>>>>>>> f688768d3d4ec3de87f16b4511cb1d336d2a2615
 @media screen and (max-width:1071px) {
 	.stit_area .m_tit {
 		font-size: 0.750em;

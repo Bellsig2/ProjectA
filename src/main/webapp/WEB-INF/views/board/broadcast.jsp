@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="../resources/css/broadcast.css" rel="stylesheet">
-		<title>Insert title here</title>
+		<title>KPOP Music, Music Video & Korean POP Chart | M COUNTDOWN</title>
 	</head>
 	
 	<body>
